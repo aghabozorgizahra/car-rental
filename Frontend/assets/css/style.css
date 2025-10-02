@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Estedad-Bold';
+    src: url('../font/ttf/Estedad-Bold.ttf') format(ttf),
+        url('../font/woff2/Estedad-Bold.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-ExtraBold';
+    src: url('../font/ttf/Estedad-ExtraBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Black';
+    src: url('../font/ttf/Estedad-Black.ttf') format(ttf),
+        url('../font/woff2/Estedad-Black.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-SemiBold';
+    src: url('../font/ttf/Estedad-SemiBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-SemiBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Medium';
+    src: url('../font/ttf/Estedad-Medium.ttf') format(ttf),
+        url('../font/woff2/Estedad-Medium.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-Light';
+    src: url('../font/ttf/Estedad-Light.ttf') format(ttf),
+        url('../font/woff2/Estedad-Light.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-ExtraLight';
+    src: url('../font/ttf/Estedad-ExtraLight.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraLight.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Thin';
+    src: url('../font/ttf/Estedad-Thin.ttf') format(ttf),
+        url('../font/woff2/Estedad-Thin.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-Regular';
+    src: url('../font/ttf/Estedad-Regular.ttf') format(ttf),
+        url('../font/woff2/Estedad-Regular.woff2') format(woff2);
+}
+
+
+
+:root {
+    --primary:#194BF0;
+    --Neutral:#D7D7D7;
+    --Gray-2:#D7D7D7;
+    --Secondary:#FDB713;
+    --White:#FFFFFF;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'estedad-Regular';
+    box-sizing: border-box;
+}
