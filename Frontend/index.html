@@ -35,7 +35,7 @@
 
             <!-- SearchBox Section -->
             <div class="row searchBox pt-3" id="searchBox">
-                <div class="row"> 
+                <div class="row">
                     <div class="col-12 d-flex align-content-center">
                         <img src="./assets/imgs/icons/search.svg" class="mt-1 me-2" alt="">
                         <input type="text" name="search" placeholder="جستجو">
@@ -76,6 +76,7 @@
                     </div>
                 </div>
             </div>
+            <div class="overlay"></div>
         </div>
 
         <div class="row">
@@ -88,13 +89,90 @@
                 </div>
             </div>
         </div>
+
+        <div class="row listRez">
+            <div class="paddingList">
+                <div class="col-12 d-flex">
+                    <div class="col-6 btnRez">
+                        <a href="#" class="me-1">اجاره خودرو با راننده</a>
+                        <a href="#" class="me-1">اجاره خودرو بی راننده</a>
+                        <a href="#">اجاره ماشین عروس</a>
+                    </div>
+                    <div class="col-6 textRez text-end">
+                        <p><a href="">اطلاعات بیشتر در مورد رزرو خودرو</a></p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="col-12 d-flex thRez">
+                        <div class="col-5">
+                            <img src="./assets/imgs/icons/arrow-left-flash.svg" alt="">
+                            <span>محل تحویل خودرو</span>
+                        </div>
+                        <div class="col-7">
+                            <ul class="d-flex">
+                                <li class="ms-2 me-2"><img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1"
+                                        alt="">تاریخ تحویل</li>
+                                <li class="ms-5 me-3"><img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1"
+                                        alt="">ساعت تحویل</li>
+                                <li class="ms-4"><img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1"
+                                        alt="">تاریخ بازگشت</li>
+                                <li class="ms-5"><img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1"
+                                        alt="">ساعت بازگشت</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 infoRez d-flex">
+                        <div class="col-5 d-flex align-items-center justify-content-between pse-12" id="dropDown">
+                            <input type="text" value="تهران-فرودگاه امام خمینی">
+                            <img src="./assets/imgs/icons/arrow-down.svg" alt="">
+
+                            <div class="dropDown" id="dropDownSec">
+                                <ul>
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr>
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr>
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr>
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-7 d-flex align-items-center">
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" value="1403٫02٫10">
+                                <img src="./assets/imgs/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" value="07:00">
+                                <img src="./assets/imgs/icons/clock.svg" alt="">
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" value="1403٫02٫10">
+                                <img src="./assets/imgs/icons/calendar.svg" alt="">
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" value="07:00">
+                                <img src="./assets/imgs/icons/clock.svg" alt="">
+                            </div>
+                            <div class="searchRez ms-4"><a href="#"><img src="./assets/imgs/icons/search-normal.svg"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer Section -->
     <section class="footer-section">
         <div class="container-fluid footer">
             <div class="row rowF d-flex">
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-4 d-flex border-one justify-content-center">
                     <img src="./assets/imgs/icons/iconContact.svg" class="me-4" alt="">
                     <div class="d-flex flex-column text-center">
                         <p>ارتباط با ما</p>
@@ -102,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-4 d-flex border-one justify-content-center">
                     <img src="./assets/imgs/icons/iconEmail.svg" class="me-4" alt="">
                     <div class="d-flex flex-column text-center">
                         <p>ایمیل</p>
@@ -121,9 +199,10 @@
             <div class="row mt-3">
                 <div class="col-5 brand">
                     <img src="./assets/imgs/icons/LogoFooter.svg" class="mb-4" alt="">
-                    <p>اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.</p>
+                    <p>اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع
+                        خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.</p>
                 </div>
-                <div class="col-2 FUl">
+                <div class="col-2 FUl mt-2">
                     <ul>
                         <li class="mb-3"><a href="#">دسترسی آسان</a></li>
                         <li class="mb-3"><a href="#">سوالات متداول</a></li>
@@ -131,12 +210,14 @@
                         <li><a href="#">درباره ما</a></li>
                     </ul>
                 </div>
-                <div class="col-5 newsSec">
-                    <h5>خبرنامه</h5>
-                    <form action="">
-                        <input type="text" name="nows" placeholder="ایمیل خود را وارد کنید">
-                        <button>ارسال</button>
-                    </form>
+                <div class="col-5 newsSec d-flex justify-content-center">
+                    <div>
+                        <h5>خبرنامه</h5>
+                        <form action="">
+                            <input type="text" name="nows" placeholder="ایمیل خود را وارد کنید">
+                            <button>ارسال</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="row copyR mt-3">
