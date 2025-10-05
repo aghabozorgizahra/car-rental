@@ -358,30 +358,6 @@ li {
   padding: 20px;
   opacity: 35%;
 }
-/* .explanation {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.topic {
-  position: relative;
-}
-.topic .car {
-  width: 1224px;
-  height: 292px;
-  border-radius: 20px;
-  display: block;
-}
-.topic h2 {
-  color: var(--Secondary);
-  top: 30%;
-  transform: translate(-50%, -30%);
-}
-.topic p {
-  color: var(--BodyR20);
-  top: 55%;
-  transform: translate(-50%, -50%);
-} */
 .topic {
   position: relative;
 }
