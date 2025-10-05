@@ -8,14 +8,14 @@ let dropDown = document.getElementById("dropDown");
 let dropDownSec = document.getElementById("dropDownSec");
 
 // SearchBox Section
-searchIcon.addEventListener("click", function() {
+searchIcon.addEventListener("click", function () {
     searchBox.style.display = "block";
     overlay.style.display = "block";
     navList.style.opacity = "0";
     btnLogReg.style.opacity = "0";
 })
 
-overlay.addEventListener("click", function() {
+overlay.addEventListener("click", function () {
     searchBox.style.display = "none";
     overlay.style.display = "none";
     navList.style.opacity = "1";
@@ -23,11 +23,26 @@ overlay.addEventListener("click", function() {
 })
 
 // DropDown Rezerve Section
-dropDown.addEventListener("click", function() {
-    if(dropDownSec.style.display == "none") {
-        
+dropDown.addEventListener("click", function () {
+    if (dropDownSec.style.display == "none") {
+
         dropDownSec.style.display = "block";
     } else {
         dropDownSec.style.display = "none";
     }
 })
+
+// Owned by Persian Datepicker
+$(document).ready(function () {
+    $(".example1").pDatepicker({
+        timePicker: {
+            enabled: false
+        },
+        format: "YYYY/MM/DD"
+    });
+});
+
+$('.only-timepicker-example').persianDatepicker({
+    onlyTimePicker: true,
+    format: "HH:mm"
+});

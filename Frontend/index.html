@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Rent - Car rental Website</title>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./node_modules/persian-datepicker/dist/css/persian-datepicker.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Header Section -->
-    <div class="container-fluid header">
+    <div class="container-fluid headerAll">
         <div class="row navBar d-flex align-content-center">
             <div class="col-2">
                 <a href="#"><img src="./assets/imgs/icons/Logo.svg" alt=""></a>
@@ -141,22 +142,22 @@
                         <div class="col-7 d-flex align-items-center dateRez">
                             <div class="lineRez"></div>
                             <div class="text-center">
-                                <input type="text" value="1403٫02٫10">
+                                <input type="text" class="example1" value="1403٫02٫10">
                                 <img src="./assets/imgs/icons/calendar.svg" alt="">
                             </div>
                             <div class="lineRez"></div>
                             <div class="text-center">
-                                <input type="text" value="07:00">
+                                <input type="text" class="only-timepicker-example" value="07:00">
                                 <img src="./assets/imgs/icons/clock.svg" alt="">
                             </div>
                             <div class="lineRez"></div>
                             <div class="text-center">
-                                <input type="text" value="1403٫02٫10">
+                                <input type="text" class="example1" value="1403٫02٫10">
                                 <img src="./assets/imgs/icons/calendar.svg" alt="">
                             </div>
                             <div class="lineRez"></div>
                             <div class="text-center">
-                                <input type="text" value="07:00">
+                                <input type="text" class="only-timepicker-example" value="07:00">
                                 <img src="./assets/imgs/icons/clock.svg" alt="">
                             </div>
                             <div class="searchRez ms-4"><a href="#"><img src="./assets/imgs/icons/search-normal.svg"
@@ -228,6 +229,11 @@
             </div>
         </div>
     </section>
+
+    <!-- Owned by Persian Datepicker -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/persian-date/dist/persian-date.js"></script>
+    <script src="./node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js.js"></script>
