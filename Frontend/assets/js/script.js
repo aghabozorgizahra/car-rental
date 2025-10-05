@@ -34,7 +34,7 @@ dropDown.addEventListener("click", function () {
 
 // Owned by Persian Datepicker
 $(document).ready(function () {
-    $(".example1").pDatepicker({
+    $(".dateCarRental").pDatepicker({
         timePicker: {
             enabled: false
         },
@@ -42,7 +42,7 @@ $(document).ready(function () {
     });
 });
 
-$('.only-timepicker-example').persianDatepicker({
+$('.timeCarRentale').persianDatepicker({
     onlyTimePicker: true,
     format: "HH:mm"
 });

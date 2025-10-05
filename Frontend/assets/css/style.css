@@ -356,12 +356,6 @@ a {
     outline: none;
 }
 
-/* Owned by Persian Datepicker: Delete Background */
-body .pwt-datepicker .header {
-    background: #f5f5f5 !important;
-    background-image: none !important;
-}
-
 
 /* ------------------- Footer Section ------------------- */
 .footer-section {
