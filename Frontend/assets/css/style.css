@@ -351,6 +351,7 @@ li {
 .infoRez input:focus {
   outline: none;
 }
+/*----why OtoRent----*/
 .logos {
   margin-top: 10rem;
   display: flex;
@@ -390,6 +391,89 @@ li {
   color: var(--BodyR20);
   font-size: 16px;
   line-height: 1.8;
+}
+.advantages {
+  position: absolute;
+  transform: translate(-30%, -30%);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.advantage {
+  border: 1px solid var(--Neutral-Gray-3);
+  border-radius: 16px;
+  background-color: #fff; /* سفید روی عکس */
+  width: 312px;
+  min-height: 186px;
+  padding: 20px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container {
+  border: 1px solid var(--Neutral-Gray-8);
+  border-radius: 12px;
+  height: 72px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-container img {
+  width: 36px;
+  height: 36px;
+}
+
+.advantage h2 {
+  font-size: 16px;
+  color: var(--Heading);
+}
+
+.advantage p {
+  color: var(--Neutral-Gray-6);
+  line-height: 1.6;
+}
+.cars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.car {
+  text-align: center;
+  border: 1px solid var(--Neutral-Gray-3);
+  border-radius: 16px;
+  width: 220px;
+  background-color: var(--BodyR20);
+}
+.car img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.car h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.line {
+  width: 90%;
+  height: 4px;
+  background-color: var(--Secondary);
+  border-radius: 2px;
+  margin: 12px auto 0 auto;
 }
 
 /* ------------------- Footer Section ------------------- */
