@@ -2,337 +2,378 @@
 <html lang="fa" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Auto Rent - Car rental Website</title>
-  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.rtl.min.css" />
-  <link rel="stylesheet" href="./node_modules/persian-datepicker/dist/css/persian-datepicker.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Rent - Car rental Website</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="./node_modules/persian-datepicker/dist/css/persian-datepicker.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Header Section -->
-  <div class="container-fluid headerAll">
-    <div class="row navBar d-flex align-content-center">
-      <div class="col-2">
-        <a href="#"><img src="./assets/imgs/icons/Logo.svg" alt="" /></a>
-      </div>
-
-      <div class="col-8 d-flex justify-content-center pt-3" id="navList">
-        <ul class="d-flex navList">
-          <li class="ml-40"><a href="#">رزرو خودرو</a></li>
-          <li class="ml-40"><a href="#">خدمات ما</a></li>
-          <li class="ml-40"><a href="#">بلاگ</a></li>
-          <li class="ml-40"><a href="#">درباره ما</a></li>
-          <li class="ml-40"><a href="#">تماس با ما</a></li>
-          <li>
-            <a id="searchIcon"><img src="./assets/imgs/icons/search.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-2 d-flex justify-content-end pt-2" id="btnLogReg">
-        <a href="#" class="btn btnLogReg">ورود / ثبت نام</a>
-      </div>
-
-      <!-- SearchBox Section -->
-      <div class="row searchBox pt-3" id="searchBox">
-        <div class="row">
-          <div class="col-12 d-flex align-content-center">
-            <img src="./assets/imgs/icons/search.svg" class="mt-1 me-2" alt="" />
-            <input type="text" name="search" placeholder="جستجو" />
-          </div>
-
-          <div class="line"></div>
-        </div>
-
-        <div class="row mb-50 mt-2">
-          <div class="col-11 hisSearch">
-            <div class="col-12">
-              <p>
-                <img src="./assets/imgs/icons/clock.svg" alt="" class="me-2" />تاریخچه جستجو های شما
-              </p>
+    <!-- Header Section -->
+    <div class="container-fluid headerAll">
+        <div class="row navBar d-flex align-content-center">
+            <div class="col-2">
+                <a href="#"><img src="./assets/imgs/icons/Logo.svg" alt="" /></a>
             </div>
-            <div class="col-12 listfh">
-              <a href="#">بنز S500 یک</a>
-              <a href="#" class="me-2">DS 3</a>
-              <a href="#" class="me-2">Rolls Royce Cullinan</a>
-              <a href="#" class="me-2">پرشیا ELX سفید</a>
-              <a href="#">Tiggo 8 Pro</a>
-            </div>
-          </div>
-          <div class="col-1 text-end">
-            <a href="#"><img src="./assets/imgs/icons/Vector.svg" alt="" /></a>
-          </div>
-        </div>
 
-        <div class="row hisSearch">
-          <div class="col-12" style="height: 30px">
-            <p>
-              <img src="./assets/imgs/icons/heart-search.svg" alt="" class="me-2" />جستجوهای پرطرفدار
-            </p>
-          </div>
-          <div class="col-12 listfh">
-            <a href="#">Ferrari Roma</a>
-            <a href="#" class="me-2">Peugeot 2008</a>
-            <a href="#" class="me-2">Audi A8</a>
-            <a href="#" class="me-2">بنز S500 یک</a>
-            <a href="#" class="me-2">پرشیا ELX سفید</a>
-            <a href="#">بنز S500 یک</a>
-          </div>
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </div>
-
-    <div class="row">
-      <div class="col d-flex flex-column mt-200">
-        <h1>
-          اُتـــو رِنت؛ سریع،<br />
-          آسان و به صرفه
-        </h1>
-        <p>سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!</p>
-        <div class="btn-head d-flex">
-          <a href="#" class="btn me-4"><img src="./assets/imgs/icons/car.svg" alt="" /> رزرو آسان
-            خودرو</a>
-          <a href="#" class="btn"><img src="./assets/imgs/icons/arrow-left.svg" alt="" /> تماس با
-            ما</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row listRez">
-      <div class="paddingList">
-        <div class="col-12 d-flex">
-          <div class="col-6 btnRez">
-            <a href="#" class="me-1">اجاره خودرو با راننده</a>
-            <a href="#" class="me-1">اجاره خودرو بی راننده</a>
-            <a href="#">اجاره ماشین عروس</a>
-          </div>
-          <div class="col-6 textRez text-end">
-            <p><a href="">اطلاعات بیشتر در مورد رزرو خودرو</a></p>
-          </div>
-        </div>
-        <div class="mt-3">
-          <div class="col-12 d-flex thRez">
-            <div class="col-5">
-              <img src="./assets/imgs/icons/arrow-left-flash.svg" alt="" />
-              <span>محل تحویل خودرو</span>
-            </div>
-            <div class="col-7">
-              <ul class="d-flex">
-                <li class="ms-2 me-2">
-                  <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />تاریخ تحویل
-                </li>
-                <li class="ms-5 me-3">
-                  <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />ساعت تحویل
-                </li>
-                <li class="ms-4">
-                  <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />تاریخ بازگشت
-                </li>
-                <li class="ms-5">
-                  <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />ساعت بازگشت
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 infoRez d-flex">
-            <div class="col-5 d-flex align-items-center justify-content-between pse-12" id="dropDown">
-              <input type="text" value="تهران-فرودگاه امام خمینی" />
-              <img src="./assets/imgs/icons/arrow-down.svg" alt="" />
-
-              <div class="dropDown" id="dropDownSec">
-                <ul>
-                  <li>تهران-فرودگاه امام خمینی</li>
-                  <hr />
-                  <li>تهران-فرودگاه امام خمینی</li>
-                  <hr />
-                  <li>تهران-فرودگاه امام خمینی</li>
-                  <hr />
-                  <li>تهران-فرودگاه امام خمینی</li>
+            <div class="col-8 d-flex justify-content-center pt-3" id="navList">
+                <ul class="d-flex navList">
+                    <li class="ml-40"><a href="#">رزرو خودرو</a></li>
+                    <li class="ml-40"><a href="#">خدمات ما</a></li>
+                    <li class="ml-40"><a href="#">بلاگ</a></li>
+                    <li class="ml-40"><a href="#">درباره ما</a></li>
+                    <li class="ml-40"><a href="#">تماس با ما</a></li>
+                    <li>
+                        <a id="searchIcon"><img src="./assets/imgs/icons/search.svg" alt="" /></a>
+                    </li>
                 </ul>
-              </div>
             </div>
-            <div class="col-7 d-flex align-items-center dateRez">
-              <div class="lineRez"></div>
-              <div class="text-center">
-                <input type="text" class="dateCarRental" />
-                <img src="./assets/imgs/icons/calendar.svg" alt="" />
-              </div>
-              <div class="lineRez"></div>
-              <div class="text-center">
-                <input type="text" class="timeCarRentale" />
-                <img src="./assets/imgs/icons/clock.svg" alt="" />
-              </div>
-              <div class="lineRez"></div>
-              <div class="text-center">
-                <input type="text" class="dateCarRental" />
-                <img src="./assets/imgs/icons/calendar.svg" alt="" />
-              </div>
-              <div class="lineRez"></div>
-              <div class="text-center">
-                <input type="text" class="timeCarRentale" />
-                <img src="./assets/imgs/icons/clock.svg" alt="" />
-              </div>
-              <div class="searchRez ms-4">
-                <a href="#"><img src="./assets/imgs/icons/search-normal.svg" alt="" /></a>
-              </div>
+
+            <div class="col-2 d-flex justify-content-end pt-2" id="btnLogReg">
+                <a href="#" class="btn btnLogReg">ورود / ثبت نام</a>
             </div>
-          </div>
+
+            <!-- SearchBox Section -->
+            <div class="row searchBox pt-3" id="searchBox">
+                <div class="row">
+                    <div class="col-12 d-flex align-content-center">
+                        <img src="./assets/imgs/icons/search.svg" class="mt-1 me-2" alt="" />
+                        <input type="text" name="search" placeholder="جستجو" />
+                    </div>
+
+                    <div class="line"></div>
+                </div>
+
+                <div class="row mb-50 mt-2">
+                    <div class="col-11 hisSearch">
+                        <div class="col-12">
+                            <p>
+                                <img src="./assets/imgs/icons/clock.svg" alt="" class="me-2" />تاریخچه جستجو های شما
+                            </p>
+                        </div>
+                        <div class="col-12 listfh">
+                            <a href="#">بنز S500 یک</a>
+                            <a href="#" class="me-2">DS 3</a>
+                            <a href="#" class="me-2">Rolls Royce Cullinan</a>
+                            <a href="#" class="me-2">پرشیا ELX سفید</a>
+                            <a href="#">Tiggo 8 Pro</a>
+                        </div>
+                    </div>
+                    <div class="col-1 text-end">
+                        <a href="#"><img src="./assets/imgs/icons/Vector.svg" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="row hisSearch">
+                    <div class="col-12" style="height: 30px">
+                        <p>
+                            <img src="./assets/imgs/icons/heart-search.svg" alt="" class="me-2" />جستجوهای پرطرفدار
+                        </p>
+                    </div>
+                    <div class="col-12 listfh">
+                        <a href="#">Ferrari Roma</a>
+                        <a href="#" class="me-2">Peugeot 2008</a>
+                        <a href="#" class="me-2">Audi A8</a>
+                        <a href="#" class="me-2">بنز S500 یک</a>
+                        <a href="#" class="me-2">پرشیا ELX سفید</a>
+                        <a href="#">بنز S500 یک</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
         </div>
-      </div>
+
+        <div class="row">
+            <div class="col d-flex flex-column mt-200">
+                <h1>
+                    اُتـــو رِنت؛ سریع،<br />
+                    آسان و به صرفه
+                </h1>
+                <p>سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!</p>
+                <div class="btn-head d-flex">
+                    <a href="#" class="btn me-4"><img src="./assets/imgs/icons/car.svg" alt="" /> رزرو آسان
+                        خودرو</a>
+                    <a href="#" class="btn"><img src="./assets/imgs/icons/arrow-left.svg" alt="" /> تماس با
+                        ما</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row listRez">
+            <div class="paddingList">
+                <div class="col-12 d-flex">
+                    <div class="col-6 btnRez">
+                        <a href="#" class="me-1">اجاره خودرو با راننده</a>
+                        <a href="#" class="me-1">اجاره خودرو بی راننده</a>
+                        <a href="#">اجاره ماشین عروس</a>
+                    </div>
+                    <div class="col-6 textRez text-end">
+                        <p><a href="">اطلاعات بیشتر در مورد رزرو خودرو</a></p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="col-12 d-flex thRez">
+                        <div class="col-5">
+                            <img src="./assets/imgs/icons/arrow-left-flash.svg" alt="" />
+                            <span>محل تحویل خودرو</span>
+                        </div>
+                        <div class="col-7">
+                            <ul class="d-flex">
+                                <li class="ms-2 me-2">
+                  <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />تاریخ تحویل
+                                </li>
+                                <li class="ms-5 me-3">
+                                    <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />ساعت تحویل
+                                </li>
+                                <li class="ms-4">
+                                    <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />تاریخ
+                                    بازگشت
+                                </li>
+                                <li class="ms-5">
+                                    <img src="./assets/imgs/icons/arrow-left-flash.svg" class="me-1" alt="" />ساعت
+                                    بازگشت
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 infoRez d-flex">
+                        <div class="col-5 d-flex align-items-center justify-content-between pse-12" id="dropDown">
+                            <input type="text" value="تهران-فرودگاه امام خمینی" />
+                            <img src="./assets/imgs/icons/arrow-down.svg" alt="" />
+
+                            <div class="dropDown" id="dropDownSec">
+                                <ul>
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr />
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr />
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                    <hr />
+                                    <li>تهران-فرودگاه امام خمینی</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-7 d-flex align-items-center dateRez">
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" class="dateCarRental" />
+                                <img src="./assets/imgs/icons/calendar.svg" alt="" />
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" class="timeCarRentale" />
+                                <img src="./assets/imgs/icons/clock.svg" alt="" />
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" class="dateCarRental" />
+                                <img src="./assets/imgs/icons/calendar.svg" alt="" />
+                            </div>
+                            <div class="lineRez"></div>
+                            <div class="text-center">
+                                <input type="text" class="timeCarRentale" />
+                                <img src="./assets/imgs/icons/clock.svg" alt="" />
+                            </div>
+                            <div class="searchRez ms-4">
+                                <a href="#"><img src="./assets/imgs/icons/search-normal.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Logos Section -->
-  <div class="mLogo">
-    <div class="col-12 two-section">
-      <img src="./assets/imgs/KIALAND.png" class="me-40" alt="">
-      <img src="./assets/imgs/JeeP.png" class="me-40" alt="">
-      <img src="./assets/imgs/KIA.png" class="me-40" alt="">
-      <img src="./assets/imgs/Toyota.png" class="me-40" alt="">
-      <img src="./assets/imgs/Nissan.png" class="me-40" alt="">
-      <img src="./assets/imgs/Hyundai.png" class="me-40" alt="">
-      <img src="./assets/imgs/Honda.png" class="me-40" alt="">
-      <img src="./assets/imgs/Marcedes.png" class="me-40" alt="">
-      <img src="./assets/imgs/lexus-logo.png" class="me-40" alt="">
-      <img src="./assets/imgs/BMW.png" alt="">
-    </div>
-  </div>
-
-  <!-- Why OtoRent Section -->
-  <div class="container-fluid">
-    <div class="topic">
-      <h2>چــــــرا اُتو رِنت؟</h2>
-      <p>اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس
-        و<br> مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا
-        خودروی<br> شما مطمئن نیست، می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</p>
+    <!-- Logos Section -->
+    <div class="mLogo">
+        <div class="col-12 two-section">
+            <img src="./assets/imgs/KIALAND.png" class="me-40" alt="">
+            <img src="./assets/imgs/JeeP.png" class="me-40" alt="">
+            <img src="./assets/imgs/KIA.png" class="me-40" alt="">
+            <img src="./assets/imgs/Toyota.png" class="me-40" alt="">
+            <img src="./assets/imgs/Nissan.png" class="me-40" alt="">
+            <img src="./assets/imgs/Hyundai.png" class="me-40" alt="">
+            <img src="./assets/imgs/Honda.png" class="me-40" alt="">
+            <img src="./assets/imgs/Marcedes.png" class="me-40" alt="">
+            <img src="./assets/imgs/lexus-logo.png" class="me-40" alt="">
+            <img src="./assets/imgs/BMW.png" alt="">
+        </div>
     </div>
 
-    <div class="advantages">
-      <div class="advantageCard">
-        <div class="icon-container mx-auto">
-          <img src="./assets/imgs/icons/box.svg" alt="" />
+    <!-- Why OtoRent Section -->
+    <div class="container-fluid">
+        <div class="topic">
+            <h2>چــــــرا اُتو رِنت؟</h2>
+            <p>اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم،
+                مجالس
+                و<br> مراسم‌های خانوادگی ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید
+                یا
+                خودروی<br> شما مطمئن نیست، می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.
+            </p>
         </div>
-        <h6>تحویل در محل</h6>
-        <p>تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</p>
-      </div>
-      <div class="advantageCard">
-        <div class="icon-container mx-auto">
-          <img src="./assets/imgs/icons/24-support.svg" alt="" />
+
+        <div class="advantages">
+            <div class="advantageCard">
+                <div class="icon-container mx-auto">
+                    <img src="./assets/imgs/icons/box.svg" alt="" />
+                </div>
+                <h6>تحویل در محل</h6>
+                <p>تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</p>
+            </div>
+            <div class="advantageCard">
+                <div class="icon-container mx-auto">
+                    <img src="./assets/imgs/icons/24-support.svg" alt="" />
+                </div>
+                <h6>پشتیبانی 24 ساعته</h6>
+                <p>کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
+            </div>
+            <div class="advantageCard">
+                <div class="icon-container mx-auto">
+                    <img src="./assets/imgs/icons/wallet-minus.svg" alt="" />
+                </div>
+                <h6>قیمت مناسب</h6>
+                <p>هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</p>
+            </div>
         </div>
-        <h6>پشتیبانی 24 ساعته</h6>
-        <p>کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</p>
-      </div>
-      <div class="advantageCard">
-        <div class="icon-container mx-auto">
-          <img src="./assets/imgs/icons/wallet-minus.svg" alt="" />
+
+        <div class="cars">
+            <div class="car">
+                <h2>کوپه</h2>
+                <img src="./assets/imgs/5.png" alt="">
+                <div class="lineOrange"></div>
+            </div>
+            <div class="car">
+                <h2>سدان</h2>
+                <img src="./assets/imgs/5 (1).png" alt="">
+                <div class="lineOrange"></div>
+            </div>
+            <div class="car">
+                <h2>کروک</h2>
+                <img src="./assets/imgs/5 (2).png" alt="">
+                <div class="lineOrange"></div>
+            </div>
+            <div class="car">
+                <h2>شاسی بلند</h2>
+                <img src="./assets/imgs/5 (3).png" alt="">
+                <div class="lineOrange"></div>
+            </div>
+            <div class="car">
+                <h2>اسپرت</h2>
+                <img src="./assets/imgs/5 (4).png" alt="">
+                <div class="lineOrange"></div>
+            </div>
         </div>
-        <h6>قیمت مناسب</h6>
-        <p>هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</p>
-      </div>
     </div>
+ <!------------ list car--------- -->
+    <section class="product ">
+        <div class="product-header pb-4">
+            <div class="product-title align-center text-center pt-5">
+                <span class="title-secondary  ">مشاهده موجودی خودروها </span>
+                <h3 class="title-h3 mt-1">رزرو خودرو در <span>اُتـــورِنت</span> </h3>
+            </div>
+            <div class="product-header-button row
+            mt-3
+            ">
+                <div class="col-4"></div>
+                <div class="product-btn col-4 text-center">
+                    <button id="btn-popular" type="button" class="btn btn-primary">پرطرفدار</button>
+                    <button id="btn-luxury" type="button" class="btn btn-outline-primary"> لوکس</button>
+                    <button id="btn-economy" type="button" class="btn btn-outline-primary"> اقتصادی</button>
+                </div>
+                <span class="text-primary btn-seeall col-4 text-end">مشاهده همه <img src="assets/imgs/icons/arrow-left-p.svg" alt=""> </span>
+            </div>
+        </div>
+        <div class="product-card row  gy-4  mx-1">
+        </div>
+    </section>
+    <!-------------customer-reviews-------------->
+    <section class="customer-reviews">
+        <div class="reviews-header pb-4">
+            <div class="reviews-title align-center text-center pt-5">
+                <span class="title-secondary  ">آنچه مشتریان ما درموردمان گفته‌اند.</span>
+                <h3 class="title-h3 mt-1">نظرات <span>مشتریان</span> </h3>
+            </div>
+            <div>
+                <div id="review-display" class="row rounded-4 customer-reviews-body p-4 text-center">
+                </div>
+            </div>
+            <div class="row mt-4 gx-4" id="review-thumbnails">
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <div class="container-fluid footer">
+            <div class="row rowF d-flex">
+                <div class="col-4 d-flex border-one justify-content-center">
+                    <img src="./assets/imgs/icons/iconContact.svg" class="me-4" alt="" />
+                    <div class="d-flex flex-column text-center">
+                        <p>ارتباط با ما</p>
+                        <span>0912-21326545</span>
+                    </div>
+                </div>
 
-    <div class="cars">
-      <div class="car">
-        <h2>کوپه</h2>
-        <img src="./assets/imgs/5.png" alt="">
-        <div class="lineOrange"></div>
-      </div>
-      <div class="car">
-        <h2>سدان</h2>
-        <img src="./assets/imgs/5 (1).png" alt="">
-        <div class="lineOrange"></div>
-      </div>
-      <div class="car">
-        <h2>کروک</h2>
-        <img src="./assets/imgs/5 (2).png" alt="">
-        <div class="lineOrange"></div>
-      </div>
-      <div class="car">
-        <h2>شاسی بلند</h2>
-        <img src="./assets/imgs/5 (3).png" alt="">
-        <div class="lineOrange"></div>
-      </div>
-      <div class="car">
-        <h2>اسپرت</h2>
-        <img src="./assets/imgs/5 (4).png" alt="">
-        <div class="lineOrange"></div>
-      </div>
-    </div>
-  </div>
+                <div class="col-4 d-flex border-one justify-content-center">
+                    <img src="./assets/imgs/icons/iconEmail.svg" class="me-4" alt="" />
+                    <div class="d-flex flex-column text-center">
+                        <p>ایمیل</p>
+                        <span>autorent@info.com</span>
+                    </div>
+                </div>
 
-  <!-- Footer Section -->
-  <section class="footer-section">
-    <div class="container-fluid footer">
-      <div class="row rowF d-flex">
-        <div class="col-4 d-flex border-one justify-content-center">
-          <img src="./assets/imgs/icons/iconContact.svg" class="me-4" alt="" />
-          <div class="d-flex flex-column text-center">
-            <p>ارتباط با ما</p>
-            <span>0912-21326545</span>
-          </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="./assets/imgs/icons/iconAddress.svg" class="me-4" alt="" />
+                    <div class="d-flex flex-column text-center">
+                        <p>آدرس</p>
+                        <span>تهران- خ شادمان</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-5 brand">
+                    <img src="./assets/imgs/icons/LogoFooter.svg" class="mb-4" alt="" />
+                    <p>
+                        اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                        ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                        تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+                    </p>
+                </div>
+                <div class="col-2 FUl mt-2">
+                    <ul>
+                        <li class="mb-3"><a href="./rules-regulations.html">قوانین و مقررات</a></li>
+                        <li class="mb-3"><a href="./frequently-questions.html">سوالات متداول</a></li>
+                        <li class="mb-3"><a href="#">تماس با ما</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                    </ul>
+                </div>
+                <div class="col-5 newsSec d-flex justify-content-center">
+                    <div>
+                        <h5>خبرنامه</h5>
+                        <form action="">
+                            <input type="text" name="nows" placeholder="ایمیل خود را وارد کنید" />
+                            <button>ارسال</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyR mt-2">
+                <div class="col-12 d-flex align-content-center justify-content-center">
+                    <img src="./assets/imgs/icons/creative-commons.svg" class="mt-3-4 me-2" alt="" />
+                    <p class="mt-4-5">تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد</p>
+                </div>
+            </div>
         </div>
+    </section>
+   
+    <!-- Owned by Persian Datepicker -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/persian-date/dist/persian-date.js"></script>
+    <script src="./node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
 
-        <div class="col-4 d-flex border-one justify-content-center">
-          <img src="./assets/imgs/icons/iconEmail.svg" class="me-4" alt="" />
-          <div class="d-flex flex-column text-center">
-            <p>ایمیل</p>
-            <span>autorent@info.com</span>
-          </div>
-        </div>
-
-        <div class="col-4 d-flex justify-content-center">
-          <img src="./assets/imgs/icons/iconAddress.svg" class="me-4" alt="" />
-          <div class="d-flex flex-column text-center">
-            <p>آدرس</p>
-            <span>تهران- خ شادمان</span>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-5 brand">
-          <img src="./assets/imgs/icons/LogoFooter.svg" class="mb-4" alt="" />
-          <p>
-            اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
-            ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
-            تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
-          </p>
-        </div>
-        <div class="col-2 FUl mt-2">
-          <ul>
-            <li class="mb-3"><a href="./rules-regulations.html">قوانین و مقررات</a></li>
-            <li class="mb-3"><a href="./frequently-questions.html">سوالات متداول</a></li>
-            <li class="mb-3"><a href="#">تماس با ما</a></li>
-            <li><a href="#">درباره ما</a></li>
-          </ul>
-        </div>
-        <div class="col-5 newsSec d-flex justify-content-center">
-          <div>
-            <h5>خبرنامه</h5>
-            <form action="">
-              <input type="text" name="nows" placeholder="ایمیل خود را وارد کنید" />
-              <button>ارسال</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row copyR mt-2">
-        <div class="col-12 d-flex align-content-center justify-content-center">
-          <img src="./assets/imgs/icons/creative-commons.svg" class="mt-3-4 me-2" alt="" />
-          <p class="mt-4-5">تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Owned by Persian Datepicker -->
-  <script src="./node_modules/jquery/dist/jquery.js"></script>
-  <script src="./node_modules/persian-date/dist/persian-date.js"></script>
-  <script src="./node_modules/persian-datepicker/dist/js/persian-datepicker.js"></script>
-
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js.js"></script>
 </body>
 
 </html>

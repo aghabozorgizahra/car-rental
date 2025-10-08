@@ -8,6 +8,43 @@
   src: url("../font/Estedad-FD[KSHD\,wght].woff2") format(woff2);
 }
 
+@font-face {
+  font-family: 'Estedad-Bold';
+  src: url('../font/ttf/Estedad-Bold.ttf') format(ttf),
+    url('../font/woff2/Estedad-Bold.woff2') format(woff2);
+}
+
+@font-face {
+  font-family: 'estedad-ExtraBold';
+  src: url('../font/ttf/Estedad-ExtraBold.ttf') format(ttf),
+    url('../font/woff2/Estedad-ExtraBold.woff2') format(woff2);
+}
+
+@font-face {
+  font-family: 'estedad-ExtraLight';
+  src: url('../font/ttf/Estedad-ExtraLight.ttf') format(ttf),
+    url('../font/woff2/Estedad-ExtraLight.woff2') format(woff2);
+}
+
+@font-face {
+  font-family: 'estedad-Medium';
+  src: url('../font/ttf/Estedad-Medium.ttf') format(ttf),
+    url('../font/woff2/Estedad-Medium.woff2') format(woff2);
+
+}
+
+@font-face {
+  font-family: 'estedad-SemiBold';
+  src: url('../font/ttf/Estedad-SemiBold.ttf') format(ttf),
+    url('../font/woff2/Estedad-SemiBold.woff2') format(woff2);
+}
+
+@font-face {
+  font-family: 'estedad-Regular';
+  src: url('../font/ttf/Estedad-Regular.ttf') format(ttf),
+    url('../font/woff2/Estedad-Regular.woff2') format(woff2);
+}
+
 :root {
   --primary: #194bf0;
   --Secondary: #fdb713;
@@ -21,12 +58,15 @@
   --Neutral-Gray-4: #aeaeae;
   --Neutral-Gray-5: #9a9a9a;
   --Neutral-Gray-6: #868686;
+  --Neutral-Gray-7:#727272;
   --Neutral-Gray-8: #5e5e5e;
   --Neutral-Gray-9: #494949;
   --Neutral-Gray-10: #353535;
   --Neutral-Gray-11: #212121;
   --color-footer-text: #fffbfb;
   --text-color-03: #757575;
+  --Secondary-Shade :#D79C10;
+  --Primary-Shade-3:#08237D;
 }
 
 * {
@@ -356,11 +396,11 @@ li {
 
 /* ------------------- Why OtoRent Section ------------------- */
 .two-section {
-    opacity: 35%;
+  opacity: 35%;
 }
 
 .me-40 {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .mLogo {
@@ -404,7 +444,8 @@ li {
   height: 186px;
   border: 1px solid var(--Neutral-Gray-3);
   border-radius: 16px;
-  background-color: #fff; /* سفید روی عکس */
+  background-color: #fff;
+  /* سفید روی عکس */
   text-align: center;
   padding: 16px 24px;
 }
@@ -454,6 +495,7 @@ li {
   background-color: var(--White);
   padding-top: 4px;
 }
+
 .car img {
   width: 100%;
   height: auto;
@@ -602,4 +644,143 @@ li {
 
 .border-one {
   border-left: 1px solid var(--Neutral-Gray-6);
+}
+
+
+/* -------------list-car------------------- */
+.product {
+  padding: 0 108px;
+}
+
+.title-secondary {
+  font-family: 'estedad-ExtraLight';
+  font-size: 24px;
+}
+
+.title-h3 {
+  font-family: 'estedad-ExtraBold';
+  font-weight: 800;
+  size: 32px;
+  line-height: 180%;
+}
+
+.title-h3 span {
+  color: var(--Secondary-Shade);
+}
+
+.product-btn {
+  font-family: 'estedad-Medium';
+  font-size: 14px;
+}
+
+.btn-seeall {
+  font-family: 'estedad-SemiBold';
+  font-size: 18px;
+}
+
+.list {
+  background-color: var(--Neutral-Gray-1);
+  color: var(--Neutral-Gray-11);
+
+}
+
+.list span {
+  font-family: 'estedad-Regular';
+  font-size: 12px;
+}
+
+.price {
+  font-family: 'Estedad-Bold' !important;
+  font-size: 16px;
+}
+
+/* .line {
+  border-color: #ff0404;
+} */
+
+.card {
+  border-color:var(--Neutral-Gray-2)!important;
+}
+
+.card-img {
+  border: 1px solid var(--Neutral-Gray-1);
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.price-z {
+  font-family: 'Estedad-Bold';
+  font-size: 12px;
+}
+
+.card-footer-txt {
+  font-family: 'estedad-Medium';
+  font-size: 12px;
+}
+
+.btn-card {
+  font-family: 'estedad-SemiBold';
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-family: 'Estedad-Bold';
+  font-size: 16px;
+}
+.bg-badge{
+  background-color: var(--Primary-Shade-3);
+}
+/* ---------------------- reviews---------------------*/
+.customer-reviews{
+  padding: 0 108px;
+}
+.reviews-profile {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 5rem;
+}
+
+.customer-reviews-body {
+  border: 1px solid var(--Neutral-Gray-2);
+  background-color: var(--White);
+}
+
+.reviews-txt {
+  font-family: 'estedad-Regular';
+  font-size: 14px;
+  color: var(--Neutral-Gray-7);
+  line-height: 180%;
+  font-weight: 400;
+}
+
+.reviws-name {
+  font-family: 'estedad-Medium';
+  font-size: 16px;
+  color: var(--Black);
+}
+
+.reviews-pro {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 5rem;
+}
+
+.reviews-date {
+  font-family: 'estedad-Regular';
+  font-size: 14px;
+  color: var(--Neutral-Gray-9);
+}
+
+.reviews-sec {
+  background-color: var(--White);
+  border: 1px solid var(--Neutral-Gray-2);
+  height: 96px;
+}
+
+.active-review {
+  background-color: var(--Secondary);
+  border: none;
 }
