@@ -26,6 +26,7 @@
   --Neutral-Gray-10: #353535;
   --Neutral-Gray-11: #212121;
   --color-footer-text: #fffbfb;
+  --text-color-03: #757575;
 }
 
 * {
@@ -313,6 +314,7 @@ li {
   border-top: none;
   border-radius: 0 16px 16px 16px;
   display: none;
+  z-index: 100;
 }
 
 .dropDown ul {
@@ -351,69 +353,60 @@ li {
 .infoRez input:focus {
   outline: none;
 }
-/*----why OtoRent----*/
-.logos {
-  margin-top: 10rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  opacity: 35%;
-}
-.topic {
-  position: relative;
+
+/* ------------------- Why OtoRent Section ------------------- */
+.two-section {
+    opacity: 35%;
 }
 
-.topic .car {
+.me-40 {
+    margin-left: 40px;
+}
+
+.mLogo {
+  margin-top: 177px;
+  margin-bottom: 47px;
+  padding-right: 12px;
+}
+
+.topic {
+  background-image: url("../imgs/image\ 52.png");
   width: 100%;
   height: 292px;
-  border-radius: 20px;
-  object-fit: cover;
-  display: block;
-}
-
-.topic .text-box {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  max-width: 80%;
-  color: white;
+  padding-top: 24px;
+  border-radius: 16px;
 }
 
-.topic .text-box h2 {
+.topic h2 {
   color: var(--Secondary);
   font-size: 28px;
+  font-family: "Estedad-FD";
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.topic .text-box p {
+.topic p {
   color: var(--BodyR20);
   font-size: 16px;
-  line-height: 1.8;
-}
-.advantages {
-  position: absolute;
-  transform: translate(-30%, -30%);
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  flex-wrap: wrap;
-  text-align: center;
+  line-height: 1.9;
 }
 
-.advantage {
+.advantages {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  transform: translateY(-82px);
+}
+
+.advantageCard {
+  width: 295px;
+  height: 186px;
   border: 1px solid var(--Neutral-Gray-3);
   border-radius: 16px;
   background-color: #fff; /* سفید روی عکس */
-  width: 312px;
-  min-height: 186px;
-  padding: 20px;
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  padding: 16px 24px;
 }
 
 .icon-container {
@@ -432,20 +425,25 @@ li {
   height: 36px;
 }
 
-.advantage h2 {
+.advantageCard h6 {
   font-size: 16px;
-  color: var(--Heading);
+  font-weight: bold;
+  color: rgba(41, 45, 50, 85%);
+  font-family: "Estedad-FD";
 }
 
-.advantage p {
-  color: var(--Neutral-Gray-6);
+.advantageCard p {
+  font-size: 12px;
+  color: var(--text-color-03);
+  font-family: "Estedad-FD";
   line-height: 1.6;
 }
+
 .cars {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 12rem;
+  margin-top: -22px;
 }
 
 .car {
@@ -453,7 +451,8 @@ li {
   border: 1px solid var(--Neutral-Gray-3);
   border-radius: 16px;
   width: 220px;
-  background-color: var(--BodyR20);
+  background-color: var(--White);
+  padding-top: 4px;
 }
 .car img {
   width: 100%;
@@ -464,15 +463,17 @@ li {
 
 .car h2 {
   margin-top: 10px;
+  font-family: "Estedad-FD";
   font-size: 18px;
   font-weight: 700;
 }
 
-.line {
+.lineOrange {
   width: 90%;
-  height: 4px;
+  height: 5px;
   background-color: var(--Secondary);
-  border-radius: 2px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   margin: 12px auto 0 auto;
 }
 
