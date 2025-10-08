@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Estedad';
+    src: url('../font/Estedad[KSHD\,wght].woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'Estedad-FD';
+    src: url('../font/Estedad-FD[KSHD\,wght].woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../font/IRANSansWeb\(FaNum\).woff2') format(woff2);
+}
+
+
+
+:root {
+    --primary:#194BF0;
+    --Secondary:#FDB713;
+    --White:#FFFFFF;
+    --Low-White: #f5f0f0;
+    --Black : #0C0C0C;
+    --BodyR20: #F9F9F9;
+    --Neutral-Gray-1: #F3F3F3;
+    --Neutral-Gray-2: #D7D7D7;
+    --Neutral-Gray-3: #C2C2C2;
+    --Neutral-Gray-4: #AEAEAE;
+    --Neutral-Gray-5: #9A9A9A;
+    --Neutral-Gray-6: #868686;
+    --Neutral-Gray-8: #5E5E5E;
+    --Neutral-Gray-9: #494949;
+    --Neutral-Gray-10: #353535;
+    --Neutral-Gray-11: #212121;
+    --color-footer-text: #FFFBFB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Estedad-FD';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Neutral-Gray-1);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------- Header Section ------------------- */
+.container-fluid {
+    padding: 0 108px;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-image: url('../imgs/page-screen.png');
+    position: relative;
+    padding-top: 185px;
+}
+
+.rols h1 {
+    color: var(--Secondary);
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.breadCrumb span {
+    font-size: 14px;
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+}
+
+
+/* --- Navbar Section --- */
+.navBar {
+    width: 84%;
+    height: 96px;
+    background-color: var(--White);
+    padding: 0 32px;
+    border-radius: 0 0 16px 16px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: var(--Neutral-Gray-10);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btnLogReg {
+    width: 122px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btnLogReg:hover {
+    background-color: var(--primary);
+    color: var(--White);
+}
+
+
+/* - SearchBox Section - */
+.searchBox {
+    width: 750px;
+    height: 333px;
+    border-radius: 16px;
+    background-color: var(--White);
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    display: none;
+    z-index: 10;
+}
+
+.searchBox input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input::placeholder{
+    color: var(--Neutral-Gray-3);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input:focus{
+    outline: none;
+}
+
+.searchBox img{
+    width: 20px;
+    height: 20px;
+}
+
+.hisSearch p {
+    color: var(--Neutral-Gray-9);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listfh {
+    margin-top: 26px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.hisSearch a {
+    color: var(--Neutral-Gray-8);
+    font-family: 'Estedad-FD';
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--Neutral-Gray-1);
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Neutral-Gray-2);
+    margin: 15px 12px 15px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    z-index: 5;
+}
+
+
+
+/* ------------------- Body Questions ------------------- */
+.mt-56 {
+    margin-top: 56px;
+}
+
+.cardQuestion div {
+    height: 76px;
+    background-color: var(--White);
+    border: 1px solid var(--Neutral-Gray-2);
+    border-radius: 16px;
+}
+
+.cardQuestion img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cardQuestion p {
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--Neutral-Gray-10);
+    margin-top: 14px;
+}
+
+.picQuestion img {
+    width: 350px;
+}
+
+.two-section {
+    opacity: 25%;
+}
+
+.me-72 {
+    margin-left: 56px;
+}
+
+
+/* ------------------- Footer Section ------------------- */
+.footer-section {
+    padding: 0 108px;
+    margin-top: 80px; /* 280px --> 80px */
+    margin-bottom: 64px;
+}
+
+.footer {
+    width: 100%;
+    height: 432px;
+    background-color: rgba(30, 30, 30, 90%);
+    border-radius: 16px;
+    padding: 41px 52px;
+}
+
+.rowF {
+    border: 1px solid var(--Neutral-Gray-6);
+    border-radius: 16px;
+    padding: 16px 0;
+}
+
+.rowF p{
+    color: var(--Low-White);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.rowF span{
+    color: var(--color-footer-text);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.brand p{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+    line-height: 180%;
+}
+
+.FUl a {
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.newsSec {
+    margin-top: 28px;
+}
+
+.newsSec h5{
+    color: var(--White);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    margin-bottom: 12px;
+}
+
+.newsSec form{
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.newsSec input{
+    width: 80%;
+    height: 100%;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    padding-right: 4px;
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec input:focus{
+    outline: none;
+}
+
+.newsSec input::placeholder{
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec button{
+    padding: 7px 10px 5px 10px;
+    background-color: var(--Secondary);
+    color: var(--Neutral-Gray-11);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+}
+
+.copyR {
+    border-top: 1px solid var(--Neutral-Gray-6);
+}
+
+.copyR p{
+    color: var(--Neutral-Gray-5);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+}
+
+.mt-3-4 {
+    margin-top: 17px;
+}
+
+.mt-4-5 {
+    margin-top: 33px;
+}
+
+.border-one {
+    border-left: 1px solid var(--Neutral-Gray-6);
+}
