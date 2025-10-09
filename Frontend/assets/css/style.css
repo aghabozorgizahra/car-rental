@@ -97,6 +97,8 @@ a {
   width: 100%;
   height: 683px;
   background-image: url("../imgs/image42.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -154,13 +156,16 @@ a {
 
 /* --- Navbar Section --- */
 .navBar {
-  width: 84%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 208px);
   height: 96px;
+  margin: 0 auto;
   background-color: var(--White);
   padding: 0 32px;
   border-radius: 0 0 16px 16px;
-  position: fixed;
-  top: 0;
   z-index: 1000;
 }
 
@@ -519,6 +524,281 @@ li {
   margin: 12px auto 0 auto;
 }
 
+
+/* -------------list-car------------------- */
+.product {
+  padding: 0 108px;
+  margin: 64px 0;
+}
+
+.title-secondary {
+  font-family: 'estedad-ExtraLight';
+  font-size: 24px;
+}
+
+.title-h3 {
+  font-family: 'estedad-ExtraBold';
+  font-weight: 800;
+  size: 32px;
+  line-height: 180%;
+}
+
+.title-h3 span {
+  color: var(--Secondary-Shade);
+}
+
+.product-btn {
+  font-family: 'estedad-Medium';
+  font-size: 14px;
+}
+
+.btn-seeall {
+  font-family: 'estedad-SemiBold';
+  font-size: 18px;
+}
+
+.list {
+  background-color: var(--Neutral-Gray-1);
+  color: var(--Neutral-Gray-11);
+
+}
+
+.list span {
+  font-family: 'estedad-Regular';
+  font-size: 12px;
+}
+
+.price {
+  font-family: 'Estedad-Bold' !important;
+  font-size: 16px;
+}
+
+/* .line {
+  border-color: #ff0404;
+} */
+
+.card {
+  border-color:var(--Neutral-Gray-2)!important;
+}
+
+.card-img {
+  border: 1px solid var(--Neutral-Gray-1);
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.price-z {
+  font-family: 'Estedad-Bold';
+  font-size: 12px;
+}
+
+.card-footer-txt {
+  font-family: 'estedad-Medium';
+  font-size: 12px;
+}
+
+.btn-card {
+  font-family: 'estedad-SemiBold';
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-title {
+  font-family: 'Estedad-Bold';
+  font-size: 16px;
+}
+.bg-badge{
+  background-color: var(--Primary-Shade-3);
+}
+
+/* ------------------- How To Reserve Section ------------------- */
+.HTReserve {
+    margin: 64px 0 56px 0;
+}
+
+.HTReserve-Text p:nth-child(1) {
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-8);
+}
+
+.HTReserve-Text p:nth-child(2) {
+    font-size: 32px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--Neutral-Gray-10);
+}
+
+.mb-98 {
+    margin-bottom: 98px;
+}
+
+.mb-427 {
+    margin-bottom: 427px;
+}
+
+.autoRenvt {
+    color: var(--Secondary-Shade) !important;
+}
+
+.common-styles {
+    position: relative;
+}
+
+.common-styles-img{
+    width: 70px;
+    height: 70px;
+    background-color: var(--White);
+    padding: 10px;
+    border: 1px solid var(--Neutral-Gray-2);
+    border-radius: 16px;
+    z-index: 1000;
+}
+
+.one-1{
+    position: absolute;
+    top: -60px;
+    right: 43px;
+    z-index: 5;
+}
+
+.common-styles span:nth-child(1) {
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--Neutral-Gray-11);
+}
+
+.common-styles span:nth-child(2) {
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--Neutral-Gray-8);
+    margin-top: 8px;
+    line-height: 30px;
+}
+
+.three-3 {
+    position: absolute;
+    top: -60px;
+    right: -16px;
+    z-index: 5;
+}
+
+.two-2 {
+    position: absolute;
+    top: -60px;
+    left: -16px;
+    z-index: 5;
+}
+
+.four-4 {
+    position: absolute;
+    top: -60px;
+    left: -16px;
+    z-index: 5;
+}
+
+/* ------------------- Frequently Asked Questions Section ------------------- */
+.Frequently {
+    margin: 64px 0 48px 0;
+}
+
+.HTReserve-Text p {
+  font-size: 24px;
+  font-family: 'Estedad-FD';
+  font-weight: 400;
+  color: var(--Neutral-Gray-8);
+}
+
+.HTReserve-Text h3 {
+  font-size: 32px;
+  font-family: 'Estedad-FD';
+  font-weight: bold;
+  color: var(--Neutral-Gray-10);
+}
+
+.cardQuestion div {
+    height: 76px;
+    background-color: var(--White);
+    border: 1px solid var(--Neutral-Gray-2);
+    border-radius: 16px;
+}
+
+.cardQuestion img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.cardQuestion p {
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--Neutral-Gray-10);
+    margin-top: 14px;
+}
+
+.picQuestion img {
+    width: 350px;
+}
+
+/* ---------------------- reviews---------------------*/
+.customer-reviews{
+  padding: 0 108px;
+}
+.reviews-profile {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 5rem;
+}
+
+.customer-reviews-body {
+  border: 1px solid var(--Neutral-Gray-2);
+  background-color: var(--White);
+}
+
+.reviews-txt {
+  font-family: 'estedad-Regular';
+  font-size: 14px;
+  color: var(--Neutral-Gray-7);
+  line-height: 180%;
+  font-weight: 400;
+}
+
+.reviws-name {
+  font-family: 'estedad-Medium';
+  font-size: 16px;
+  color: var(--Black);
+}
+
+.reviews-pro {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 5rem;
+}
+
+.reviews-date {
+  font-family: 'estedad-Regular';
+  font-size: 14px;
+  color: var(--Neutral-Gray-9);
+}
+
+.reviews-sec {
+  background-color: var(--White);
+  border: 1px solid var(--Neutral-Gray-2);
+  height: 96px;
+}
+
+.active-review {
+  background-color: var(--Secondary);
+  border: none;
+}
+
+
 /* ------------------- Footer Section ------------------- */
 .footer-section {
   padding: 0 108px;
@@ -644,143 +924,4 @@ li {
 
 .border-one {
   border-left: 1px solid var(--Neutral-Gray-6);
-}
-
-
-/* -------------list-car------------------- */
-.product {
-  padding: 0 108px;
-}
-
-.title-secondary {
-  font-family: 'estedad-ExtraLight';
-  font-size: 24px;
-}
-
-.title-h3 {
-  font-family: 'estedad-ExtraBold';
-  font-weight: 800;
-  size: 32px;
-  line-height: 180%;
-}
-
-.title-h3 span {
-  color: var(--Secondary-Shade);
-}
-
-.product-btn {
-  font-family: 'estedad-Medium';
-  font-size: 14px;
-}
-
-.btn-seeall {
-  font-family: 'estedad-SemiBold';
-  font-size: 18px;
-}
-
-.list {
-  background-color: var(--Neutral-Gray-1);
-  color: var(--Neutral-Gray-11);
-
-}
-
-.list span {
-  font-family: 'estedad-Regular';
-  font-size: 12px;
-}
-
-.price {
-  font-family: 'Estedad-Bold' !important;
-  font-size: 16px;
-}
-
-/* .line {
-  border-color: #ff0404;
-} */
-
-.card {
-  border-color:var(--Neutral-Gray-2)!important;
-}
-
-.card-img {
-  border: 1px solid var(--Neutral-Gray-1);
-}
-
-.card-img img {
-  width: 100%;
-}
-
-.price-z {
-  font-family: 'Estedad-Bold';
-  font-size: 12px;
-}
-
-.card-footer-txt {
-  font-family: 'estedad-Medium';
-  font-size: 12px;
-}
-
-.btn-card {
-  font-family: 'estedad-SemiBold';
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.card-title {
-  font-family: 'Estedad-Bold';
-  font-size: 16px;
-}
-.bg-badge{
-  background-color: var(--Primary-Shade-3);
-}
-/* ---------------------- reviews---------------------*/
-.customer-reviews{
-  padding: 0 108px;
-}
-.reviews-profile {
-  width: 10rem;
-  aspect-ratio: 1/1;
-  border-radius: 5rem;
-}
-
-.customer-reviews-body {
-  border: 1px solid var(--Neutral-Gray-2);
-  background-color: var(--White);
-}
-
-.reviews-txt {
-  font-family: 'estedad-Regular';
-  font-size: 14px;
-  color: var(--Neutral-Gray-7);
-  line-height: 180%;
-  font-weight: 400;
-}
-
-.reviws-name {
-  font-family: 'estedad-Medium';
-  font-size: 16px;
-  color: var(--Black);
-}
-
-.reviews-pro {
-  width: 4rem;
-  aspect-ratio: 1/1;
-  border-radius: 5rem;
-}
-
-.reviews-date {
-  font-family: 'estedad-Regular';
-  font-size: 14px;
-  color: var(--Neutral-Gray-9);
-}
-
-.reviews-sec {
-  background-color: var(--White);
-  border: 1px solid var(--Neutral-Gray-2);
-  height: 96px;
-}
-
-.active-review {
-  background-color: var(--Secondary);
-  border: none;
 }
