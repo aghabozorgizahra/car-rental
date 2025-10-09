@@ -264,8 +264,6 @@ a {
 }
 
 .cardRole {
-    width: 554px;
-    height: 280px;
     background-color: var(--White);
     border-radius: 16px;
     padding: 24px 24px 0 24px;
