@@ -652,7 +652,7 @@ li {
     padding: 10px;
     border: 1px solid var(--Neutral-Gray-2);
     border-radius: 16px;
-    z-index: 1000;
+    z-index: 200;
 }
 
 .one-1{
