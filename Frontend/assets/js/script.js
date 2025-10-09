@@ -23,14 +23,16 @@ overlay.addEventListener("click", function () {
 })
 
 // DropDown Rezerve Section
-dropDown.addEventListener("click", function () {
-    if (dropDownSec.style.display == "none") {
+dropDown.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropDownSec.style.display = (dropDownSec.style.display === "block") ? "none" : "block";
+});
 
-        dropDownSec.style.display = "block";
-    } else {
+document.addEventListener("click", (e) => {
+    if(dropDownSec.style.display === "block") {
         dropDownSec.style.display = "none";
     }
-})
+});
 
 // Owned by Persian Datepicker
 $(document).ready(function () {
