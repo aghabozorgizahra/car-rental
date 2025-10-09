@@ -116,6 +116,14 @@ a {
     font-size: 16px;
 }
 
+.navList a:hover {
+  font-weight: bold;
+}
+
+.navList img {
+  cursor: pointer;
+}
+
 .btnLogReg {
     width: 122px;
     height: 40px;
