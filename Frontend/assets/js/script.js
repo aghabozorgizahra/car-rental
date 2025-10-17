@@ -29,7 +29,7 @@ dropDown.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-    if(dropDownSec.style.display === "block") {
+    if (dropDownSec.style.display === "block") {
         dropDownSec.style.display = "none";
     }
 });
@@ -116,6 +116,10 @@ class ProductCard {
       <span class="col-4 text-end">ماهانه</span>
     `;
 
+        const hr = document.createElement("hr");
+        hr.className = "my-3";
+
+
         const footerRow = document.createElement("div");
         footerRow.className = "d-flex align-items-center justify-content-between my-2";
 
@@ -144,6 +148,7 @@ class ProductCard {
         body.appendChild(model);
         body.appendChild(daily);
         body.appendChild(monthly);
+        body.appendChild(hr);
         body.appendChild(footerRow);
         body.appendChild(btnWrapper);
 
