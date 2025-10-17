@@ -1,0 +1,533 @@
+@font-face {
+    font-family: "Estedad";
+    src: url("../font/Estedad[KSHD\,wght].woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Estedad-FD";
+    src: url("../font/Estedad-FD[KSHD\,wght].woff2") format(woff2);
+}
+
+@font-face {
+    font-family: 'Estedad-Bold';
+    src: url('../font/ttf/Estedad-Bold.ttf') format(ttf),
+        url('../font/woff2/Estedad-Bold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-ExtraBold';
+    src: url('../font/ttf/Estedad-ExtraBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-ExtraLight';
+    src: url('../font/ttf/Estedad-ExtraLight.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraLight.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Medium';
+    src: url('../font/ttf/Estedad-Medium.ttf') format(ttf),
+        url('../font/woff2/Estedad-Medium.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-SemiBold';
+    src: url('../font/ttf/Estedad-SemiBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-SemiBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Regular';
+    src: url('../font/ttf/Estedad-Regular.ttf') format(ttf),
+        url('../font/woff2/Estedad-Regular.woff2') format(woff2);
+}
+
+:root {
+    --primary: #194bf0;
+    --Secondary: #fdb713;
+    --White: #ffffff;
+    --Low-White: #f5f0f0;
+    --Black: #0c0c0c;
+    --BodyR20: #f9f9f9;
+    --Neutral-Gray-1: #f3f3f3;
+    --Neutral-Gray-2: #d7d7d7;
+    --Neutral-Gray-3: #c2c2c2;
+    --Neutral-Gray-4: #aeaeae;
+    --Neutral-Gray-5: #9a9a9a;
+    --Neutral-Gray-6: #868686;
+    --Neutral-Gray-7: #727272;
+    --Neutral-Gray-8: #5e5e5e;
+    --Neutral-Gray-9: #494949;
+    --Neutral-Gray-10: #353535;
+    --Neutral-Gray-11: #212121;
+    --color-footer-text: #fffbfb;
+    --text-color-02: #414141;
+    --text-color-03: #757575;
+    --Secondary-Shade: #D79C10;
+    --Primary-Shade-3: #08237D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Estedad-FD";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Neutral-Gray-1) !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ------------------- Header Section ------------------- */
+.container-fluid {
+    padding: 0 108px;
+}
+
+.headerAll {
+    width: 100%;
+    height: 683px;
+    background-image: url("../imgs/image42.png");
+    position: relative;
+}
+
+.headerAll h1 {
+    color: var(--Secondary);
+    font-size: 44px;
+    font-family: "Estedad-FD";
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.headerAll p {
+    color: var(--BodyR20);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Estedad-FD";
+}
+
+.btn-head {
+    margin-top: 40px;
+}
+
+.btn-head a:nth-child(1) {
+    width: 186px;
+    height: 48px;
+    background-color: var(--Secondary);
+    color: var(--Black);
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-head a:nth-child(2) {
+    width: 151px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid var(--White);
+    color: var(--White);
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mt-200 {
+    margin-top: 196px;
+}
+
+/* --- Navbar Section --- */
+.navBar {
+    width: 84%;
+    height: 96px;
+    background-color: var(--White);
+    padding: 0 32px;
+    border-radius: 0 0 16px 16px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: var(--Neutral-Gray-10);
+    font-family: "Estedad-FD";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btnLogReg {
+    width: 122px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--White);
+    font-family: "Estedad-FD";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btnLogReg:hover {
+    background-color: var(--primary);
+    color: var(--White);
+}
+
+/* - SearchBox Section - */
+.searchBox {
+    width: 750px;
+    height: 333px;
+    border-radius: 16px;
+    background-color: var(--White);
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    display: none !important;
+    z-index: 10;
+}
+
+.searchBox input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-family: "Estedad-FD";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input::placeholder {
+    color: var(--Neutral-Gray-3);
+    font-family: "Estedad-FD";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input:focus {
+    outline: none;
+}
+
+.searchBox img {
+    width: 20px;
+    height: 20px;
+}
+
+.hisSearch p {
+    color: var(--Neutral-Gray-9);
+    font-family: "Estedad-FD";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listfh {
+    margin-top: 26px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.hisSearch a {
+    color: var(--Neutral-Gray-8);
+    font-family: "Estedad-FD";
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--Neutral-Gray-1);
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Neutral-Gray-2);
+    margin: 15px 12px 15px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    z-index: 5;
+}
+
+/*  */
+/* ------------------- Header Section ------------------- */
+.container-fluid {
+    padding: 0 108px !important;
+}
+
+
+.rols h1 {
+    color: var(--Secondary);
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.breadCrumb span {
+    font-size: 14px;
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+}
+
+.header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+      flex: 1 0 auto;
+    background-image: linear-gradient(#00000099, #00000099), url('../imgs/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+/*  */
+.contact-sec {
+    background-color: var(--White);
+    border-radius: 16px;
+    font-size: 14px;
+    font-family: 'estedad-Regular';
+    color: var(--Neutral-Gray-11);
+    line-height: 180%;
+    text-align: justify;
+    margin-top: 56px;
+}
+
+.body-regular-24 {
+    margin-top: 48px;
+    color: var(--Neutral-Gray-9);
+    font-size: 24px;
+}
+.body-regular-24-1{
+     margin-top: 12px;
+    color: var(--Neutral-Gray-9);
+    font-size: 24px;
+}
+.address{
+    font-size: 20px;
+    color: var(--Neutral-Gray-5);
+}
+.address span{
+    color: var(--Neutral-Gray-9);
+
+}
+.h-line{
+    width: 60%;
+    margin-bottom: 40px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.line-sec {
+    position: relative;
+}
+
+.line {
+    /* position: relative; */
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+.line-sec::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -1px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--Secondary);
+    border-radius: 3px;
+    z-index: 99;
+}
+
+input ,textarea{
+    outline: none;
+    border: 1px solid var(--Neutral-Gray-3);
+    border-radius: 6px !important;
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+    
+}
+textarea {
+  height: 8rem;          
+  resize: none;          
+  padding: 12px;
+  line-height: 1.6;
+}
+input::placeholder{
+    color: var(--Neutral-Gray-5);
+    font-size: 14px;
+}
+.input-group{
+    position: relative;
+}
+.emil-icon{
+    position: absolute;
+    transform: translate(-8px,8px);
+}
+
+.input-group label{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: var(--White);
+    color: var(--Neutral-Gray-4);
+    font-size: 14px;
+}
+/* ------------------- Footer Section ------------------- */
+.footer-section {
+    padding: 0 108px;
+    margin-top: 40px;
+    margin-bottom: 64px;
+}
+
+.footer {
+    width: 100%;
+    height: 432px;
+    background-color: rgba(30, 30, 30, 90%);
+    border-radius: 16px;
+    padding: 41px 52px;
+}
+
+.rowF {
+    border: 1px solid var(--Neutral-Gray-6);
+    border-radius: 16px;
+    padding: 16px 0;
+}
+
+.rowF p {
+    color: var(--Low-White);
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    font-weight: 300;
+}
+
+.rowF span {
+    color: var(--color-footer-text);
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    font-weight: 300;
+}
+
+.brand p {
+    color: var(--White);
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 300;
+    line-height: 180%;
+}
+
+.FUl a {
+    color: var(--White);
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 300;
+}
+
+.newsSec {
+    margin-top: 28px;
+}
+
+.newsSec h5 {
+    color: var(--White);
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    margin-bottom: 12px;
+}
+
+.newsSec form {
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.newsSec input {
+    width: 80%;
+    height: 100%;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    padding-right: 4px;
+    font-size: 12px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec input:focus {
+    outline: none;
+}
+
+.newsSec input::placeholder {
+    font-size: 12px;
+    font-family: "Estedad-FD";
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec button {
+    padding: 7px 10px 5px 10px;
+    background-color: var(--Secondary);
+    color: var(--Neutral-Gray-11);
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+}
+
+.copyR {
+    border-top: 1px solid var(--Neutral-Gray-6);
+}
+
+.copyR p {
+    color: var(--Neutral-Gray-5);
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+}
+
+.mt-3-4 {
+    margin-top: 17px;
+}
+
+.mt-4-5 {
+    margin-top: 33px;
+}
+
+.border-one {
+    border-left: 1px solid var(--Neutral-Gray-6);
+}
