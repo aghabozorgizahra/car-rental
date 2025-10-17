@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "Estedad";
+    src: url("../font/Estedad[KSHD\,wght].woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Estedad-FD";
+    src: url("../font/Estedad-FD[KSHD\,wght].woff2") format(woff2);
+}
+
+@font-face {
+    font-family: 'Estedad-Bold';
+    src: url('../font/ttf/Estedad-Bold.ttf') format(ttf),
+        url('../font/woff2/Estedad-Bold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-ExtraBold';
+    src: url('../font/ttf/Estedad-ExtraBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-ExtraLight';
+    src: url('../font/ttf/Estedad-ExtraLight.ttf') format(ttf),
+        url('../font/woff2/Estedad-ExtraLight.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Medium';
+    src: url('../font/ttf/Estedad-Medium.ttf') format(ttf),
+        url('../font/woff2/Estedad-Medium.woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'estedad-SemiBold';
+    src: url('../font/ttf/Estedad-SemiBold.ttf') format(ttf),
+        url('../font/woff2/Estedad-SemiBold.woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'estedad-Regular';
+    src: url('../font/ttf/Estedad-Regular.ttf') format(ttf),
+        url('../font/woff2/Estedad-Regular.woff2') format(woff2);
+}
+
+:root {
+    --primary: #194bf0;
+    --Secondary: #fdb713;
+    --White: #ffffff;
+    --Low-White: #f5f0f0;
+    --Black: #0c0c0c;
+    --BodyR20: #f9f9f9;
+    --Neutral-Gray-1: #f3f3f3;
+    --Neutral-Gray-2: #d7d7d7;
+    --Neutral-Gray-3: #c2c2c2;
+    --Neutral-Gray-4: #aeaeae;
+    --Neutral-Gray-5: #9a9a9a;
+    --Neutral-Gray-6: #868686;
+    --Neutral-Gray-7: #727272;
+    --Neutral-Gray-8: #5e5e5e;
+    --Neutral-Gray-9: #494949;
+    --Neutral-Gray-10: #353535;
+    --Neutral-Gray-11: #212121;
+    --color-footer-text: #fffbfb;
+    --text-color-03: #757575;
+    --Secondary-Shade: #D79C10;
+    --Primary-Shade-3: #08237D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Estedad-FD";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Neutral-Gray-2);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ------------- Login Section ------------- */
+.loginPage {
+    width: 100%;
+    height: 100%;
+    /* padding: 84px 212px; */
+    padding: 13.1vh 15.5vw;
+}
+
+.container-login {
+    width: 100%;
+    height: 124.8vh;
+    background-color: var(--White);
+    border-radius: 1rem;
+}
+
+.imageLog {
+    height: 100%;
+    background-image: url("../imgs/olav-tvedt1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1rem;
+}
+
+.logoLogin {
+    margin-bottom: 31.2vh;
+    /* margin-bottom: 41%; */
+}
+
+.part-log {
+    padding: 32px 62px 0 62px;
+}
+
+.part-log h2 {
+    font-size: 20px;
+    font-family: "Estedad-FD";
+    font-weight: bold;
+    color: var(--Neutral-Gray-9);
+    margin-bottom: 30px;
+}
+
+.part-log p {
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+    color: var(--Neutral-Gray-9);
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--Neutral-Gray-3);
+    border-radius: 8px;
+}
+
+.form-input input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    direction: ltr;
+    font-family: "Estedad-FD";
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+.lineLog {
+    background-color: var(--Neutral-Gray-3);
+    margin: 12px 8px;
+    padding: 0.5px;
+}
+
+@media (min-width: 1500px) {
+    .lineLog {
+        margin: 12px 12px;
+    }
+}
+
+.plus98 {
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+    color: var(--Black);
+    margin-left: 8px;
+}
+
+.checkboxLog {
+    margin-top: 32px;
+}
+
+.checkboxLog input {
+    width: 20px;
+    height: 20px;
+    border-color: var(--Neutral-Gray-3);
+}
+
+.checkboxLog span {
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+    color: var(--Neutral-Gray-7);
+    margin-right: 12px;
+}
+
+.checkboxLog a {
+    color: var(--primary);
+}
+
+.btnSubmit {
+    height: 48px;
+    margin-top: 14px;
+    background-color: var(--Neutral-Gray-1);
+    border-radius: 8px;
+    border: none;
+    color: var(--Neutral-Gray-3);
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 500;
+}
+
+.btnSubmit:hover {
+    background-color: var(--primary);
+    color: var(--White);
+}
+
+/* ----------------- Form Code Section ------------------ */
+
+.codeFormStyle {
+    display: none;
+}
+
+.squareInput {
+    margin-bottom: 2rem;
+}
+
+.squareInput input {
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--Neutral-Gray-3);
+
+    font-size: 16px;
+    font-family: "Estedad-FD";
+    font-weight: bold;
+    color: var(--Black);
+}
+
+.squareInput input:focus {
+    border: 1px solid #1371F4;
+    outline: none;
+}
+
+.textTime img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+.textTime span {
+    font-size: 14px;
+    font-family: "Estedad-FD";
+    font-weight: 400;
+    color: var(--Neutral-Gray-6);
+}
+
+.timeCode span {
+    color: var(--primary);
+}
+
+.editNumber {
+    color: var(--primary);
+    cursor: pointer;
+}

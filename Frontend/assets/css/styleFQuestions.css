@@ -34,6 +34,7 @@
     --Neutral-Gray-10: #353535;
     --Neutral-Gray-11: #212121;
     --color-footer-text: #FFFBFB;
+    --Primary-Shade-2: #0d32aa;
 }
 
 *{
@@ -53,6 +54,11 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.row-margin-without {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* ------------------- Header Section ------------------- */
@@ -86,18 +92,24 @@ a {
 
 
 /* --- Navbar Section --- */
-.navBar {
+.container-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: calc(100% - 208px);
+  width: 100%;
   height: 96px;
-  margin: 0 auto;
+  padding: 0 108px;
+  z-index: 1000;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
   background-color: var(--White);
+  margin: 0 auto;
   padding: 0 32px;
   border-radius: 0 0 16px 16px;
-  z-index: 1000;
 }
 
 .navList li {
@@ -135,22 +147,26 @@ a {
 }
 
 .btnLogReg:hover {
-    background-color: var(--primary);
+    background-color: var(--Primary-Shade-2);
     color: var(--White);
 }
 
 
 /* - SearchBox Section - */
 .searchBox {
-    width: 750px;
-    height: 333px;
-    border-radius: 16px;
-    background-color: var(--White);
-    position: absolute;
-    top: 20px;
-    right: 20%;
-    display: none;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: 60%;
+  height: 54vh;
+  border-radius: 16px;
+  background-color: var(--White);
+  padding-top: 16px;
+  margin: 0 auto;
+  display: none;
+  z-index: 10;
 }
 
 .searchBox input{
@@ -189,10 +205,6 @@ a {
     margin-top: 26px;
 }
 
-.mb-50 {
-    margin-bottom: 50px;
-}
-
 .hisSearch a {
     color: var(--Neutral-Gray-8);
     font-family: 'Estedad-FD';
@@ -204,11 +216,11 @@ a {
     padding: 10px;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--Neutral-Gray-2);
-    margin: 15px 12px 15px 0;
+.lineSearch {
+  width: 98%;
+  height: 1px;
+  background-color: var(--Neutral-Gray-2);
+  margin: 24px 12px 24px 0;
 }
 
 .overlay {

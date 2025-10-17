@@ -14,12 +14,11 @@
 <body>
     <header>
         <div class=" header">
-            <div class="container-fluid">
-
-
-                <div class="row navBar d-flex align-content-center ">
+            <!-- Navbar Section -->
+            <div class="container-nav">
+                <div class="row navBar d-flex align-content-center">
                     <div class="col-2">
-                        <a href="index.html"><img src="./assets/imgs/icons/Logo.svg" alt=""></a>
+                        <a href="./index.html"><img src="./assets/imgs/icons/Logo.svg" alt="" /></a>
                     </div>
 
                     <div class="col-8 d-flex justify-content-center pt-3" id="navList">
@@ -27,65 +26,71 @@
                             <li class="ml-40"><a href="#">رزرو خودرو</a></li>
                             <li class="ml-40"><a href="#">خدمات ما</a></li>
                             <li class="ml-40"><a href="#">بلاگ</a></li>
-                            <li class="ml-40"><a href="./about.html">درباره ما</a></li>
+                            <li class="ml-40"><a href="about.html">درباره ما</a></li>
                             <li class="ml-40"><a href="./contact-us.html">تماس با ما</a></li>
-                            <li><a id="searchIcon"><img src="./assets/imgs/icons/search.svg" alt=""></a></li>
+                            <li>
+                                <a id="searchIcon"><img src="./assets/imgs/icons/search.svg" alt="" /></a>
+                            </li>
                         </ul>
                     </div>
 
                     <div class="col-2 d-flex justify-content-end pt-2" id="btnLogReg">
-                        <a href="#" class="btn btnLogReg">ورود / ثبت نام</a>
+                        <a href="./login.html" class="btn btnLogReg">ورود / ثبت نام</a>
+                    </div>
+                </div>
+                <!-- SearchBox Section -->
+                <div class="row row-margin-without searchBox" id="searchBox">
+                    <div class="row row-margin-without">
+                        <div class="col-12 d-flex align-content-center">
+                            <img src="./assets/imgs/icons/search.svg" class="mt-1 me-2" alt="" />
+                            <input type="text" name="search" placeholder="جستجو" />
+                        </div>
+
+                        <div class="lineSearch"></div>
                     </div>
 
-                    <!-- SearchBox Section -->
-                    <div class="row searchBox pt-3" id="searchBox">
-                        <div class="row">
-                            <div class="col-12 d-flex align-content-center">
-                                <img src="./assets/imgs/icons/search.svg" class="mt-1 me-2" alt="">
-                                <input type="text" name="search" placeholder="جستجو">
-                            </div>
-
-                            <div class="line"></div>
-                        </div>
-
-                        <div class="row mb-50 mt-2">
-                            <div class="col-11 hisSearch">
-                                <div class="col-12">
-                                    <p><img src="./assets/imgs/icons/clock.svg" alt="" class="me-2">تاریخچه جستجو های
-                                        شما
-                                    </p>
-                                </div>
-                                <div class="col-12 listfh">
-                                    <a href="#">بنز S500 یک</a>
-                                    <a href="#" class="me-2">DS 3</a>
-                                    <a href="#" class="me-2">Rolls Royce Cullinan</a>
-                                    <a href="#" class="me-2">پرشیا ELX سفید</a>
-                                    <a href="#">Tiggo 8 Pro</a>
-                                </div>
-                            </div>
-                            <div class="col-1 text-end">
-                                <a href="#"><img src="./assets/imgs/icons/Vector.svg" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="row hisSearch">
-                            <div class="col-12" style="height: 30px;">
-                                <p><img src="./assets/imgs/icons/heart-search.svg" alt="" class="me-2">جستجوهای پرطرفدار
+                    <div class="row row-margin-without mb-5">
+                        <div class="col-11 hisSearch">
+                            <div class="col-12">
+                                <p>
+                                    <img src="./assets/imgs/icons/clock.svg" alt="" class="me-2" />تاریخچه جستجو های
+                                    شما
                                 </p>
                             </div>
                             <div class="col-12 listfh">
-                                <a href="#">Ferrari Roma</a>
-                                <a href="#" class="me-2">Peugeot 2008</a>
-                                <a href="#" class="me-2">Audi A8</a>
-                                <a href="#" class="me-2">بنز S500 یک</a>
-                                <a href="#" class="me-2">پرشیا ELX سفید</a>
                                 <a href="#">بنز S500 یک</a>
+                                <a href="#" class="me-2">DS 3</a>
+                                <a href="#" class="me-2">Rolls Royce Cullinan</a>
+                                <a href="#" class="me-2">پرشیا ELX سفید</a>
+                                <a href="#">Tiggo 8 Pro</a>
                             </div>
                         </div>
+                        <div class="col-1 text-end">
+                            <a href="#"><img src="./assets/imgs/icons/Vector.svg" alt="" /></a>
+                        </div>
                     </div>
-                    <div class="overlay"></div>
+
+                    <div class="row hisSearch row-margin-without">
+                        <div class="col-12" style="height: 30px">
+                            <p>
+                                <img src="./assets/imgs/icons/heart-search.svg" alt="" class="me-2" />جستجوهای
+                                پرطرفدار
+                            </p>
+                        </div>
+                        <div class="col-12 listfh">
+                            <a href="#">Ferrari Roma</a>
+                            <a href="#" class="me-2">Peugeot 2008</a>
+                            <a href="#" class="me-2">Audi A8</a>
+                            <a href="#" class="me-2">بنز S500 یک</a>
+                            <a href="#" class="me-2">پرشیا ELX سفید</a>
+                            <a href="#">بنز S500 یک</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="overlay"></div>
             </div>
+
             <div class="hero">
                 <div class="rols text-center">
                     <h1> درباره ما </h1>

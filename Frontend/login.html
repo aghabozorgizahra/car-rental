@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Page</title>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.rtl.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+
+    <div class="loginPage">
+        <div class="row container-login">
+            <div class="col-8 part-log text-center">
+                <img src="./assets/imgs/icons/Logo.svg" class="img-fluid logoLogin" alt="">
+                <h2 id="test">ورود یا ثبت نام</h2>
+                <p>کد تایید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.</p>
+                <form id="phoneForm" class="form-input">
+                    <input type="text" name="login" placeholder="9********" maxlength="10">
+                    <span class="lineLog"></span>
+                    <span class="plus98">+98</span>
+                    <img src="./assets/imgs/icons/Flag.svg" alt="">
+
+                    <div class="checkboxLog d-flex align-self-center">
+                        <input type="checkbox" name="checkboxLog">
+                        <span>با ورود و ثبت‌نام در سایت، با <a href="rules-regulations.html">قوانین اتورنت</a> موافقت
+                            می‌کنم.</span>
+                    </div>
+                    <button type="button" id="subPhoneForm" class="btnSubmit w-100">تایید و ادامه</button>
+                </form>
+                <form id="codeForm" class="codeFormStyle">
+                    <div class="d-flex flex-row-reverse justify-content-center squareInput">
+                        <input type="text" class="me-3 code-input" maxlength="1">
+                        <input type="text" class="me-3 code-input" maxlength="1">
+                        <input type="text" class="me-3 code-input" maxlength="1">
+                        <input type="text" class="me-3 code-input" maxlength="1">
+                        <input type="text" class="me-3 code-input" maxlength="1">
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <div class="textTime">
+                            <img src="./assets/imgs/icons/clock.svg" alt="">
+                            <span class="timeCode" id="textTime"><span id="timer">02:00</span> تا دریافت مجدد کد</span>
+                        </div>
+                        <span class="editNumber" id="editNumber">ویرایش شماره موبایل</span>
+                    </div>
+                    <button type="button" class="btnSubmit w-100">تایید و ادامه</button>
+                </form>
+            </div>
+            <div class="col-4 imageLog"></div>
+        </div>
+    </div>
+
+    <script src="./assets/js/login-script.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js.js"></script>
+</body>
+
+</html>

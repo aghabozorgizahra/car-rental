@@ -67,6 +67,7 @@
   --text-color-03: #757575;
   --Secondary-Shade :#D79C10;
   --Primary-Shade-3:#08237D;
+  --Primary-Shade-2: #0d32aa;
 }
 
 * {
@@ -86,6 +87,11 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.row-margin-without {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ------------------- Header Section ------------------- */
@@ -154,19 +160,25 @@ a {
   margin-top: 196px;
 }
 
-/* --- Navbar Section --- */
-.navBar {
+/* ------------------- Navbar Section ------------------- */
+.container-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: calc(100% - 208px);
+  width: 100%;
   height: 96px;
-  margin: 0 auto;
+  padding: 0 108px;
+  z-index: 1000;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
   background-color: var(--White);
+  margin: 0 auto;
   padding: 0 32px;
   border-radius: 0 0 16px 16px;
-  z-index: 1000;
 }
 
 .navList li {
@@ -204,19 +216,23 @@ a {
 }
 
 .btnLogReg:hover {
-  background-color: var(--primary);
+  background-color: var(--Primary-Shade-2);
   color: var(--White);
 }
 
 /* - SearchBox Section - */
 .searchBox {
-  width: 750px;
-  height: 333px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: 60%;
+  height: 54vh;
   border-radius: 16px;
   background-color: var(--White);
-  position: absolute;
-  top: 20px;
-  right: 20%;
+  padding-top: 16px;
+  margin: 0 auto;
   display: none;
   z-index: 10;
 }
@@ -257,10 +273,6 @@ a {
   margin-top: 26px;
 }
 
-.mb-50 {
-  margin-bottom: 50px;
-}
-
 .hisSearch a {
   color: var(--Neutral-Gray-8);
   font-family: "Estedad-FD";
@@ -272,11 +284,11 @@ a {
   padding: 10px;
 }
 
-.line {
-  width: 100%;
+.lineSearch {
+  width: 98%;
   height: 1px;
   background-color: var(--Neutral-Gray-2);
-  margin: 15px 12px 15px 0;
+  margin: 24px 12px 24px 0;
 }
 
 .overlay {
@@ -314,6 +326,12 @@ a {
   border: 1px solid var(--Neutral-Gray-2);
   border-radius: 20px;
   color: var(--Black);
+  transition: all 0.3s;
+}
+
+.btnRez a:hover {
+  background-color: var(--primary);
+  color: var(--White);
 }
 
 .btnRez a:nth-child(1) {
@@ -392,20 +410,29 @@ li {
   background-color: var(--Secondary);
   padding: 15px 15px;
   border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.searchRez:hover {
+  background-color: rgb(255, 200, 49);
 }
 
 .infoRez input {
   width: 60%;
   height: 100%;
   border: none;
+  
+}
+
+.styleText2 {
+  width: 60%;
+  height: 100%;
   font-size: 16px;
   font-family: "Estedad-FD";
   font-weight: 500;
   color: var(--Neutral-Gray-11);
-}
-
-.infoRez input:focus {
-  outline: none;
+  margin-top: 4.5vh;
 }
 
 /* ------------------- Why OtoRent Section ------------------- */
