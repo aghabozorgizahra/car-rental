@@ -89,190 +89,144 @@ a {
   text-decoration: none !important;
 }
 
-/* ------------------- Header Section ------------------- */
-.container-fluid {
-  padding: 0 108px;
-}
-
-.headerAll {
-  width: 100%;
-  height: 683px;
-  background-image: url("../imgs/image42.png");
-  position: relative;
-}
-
-.headerAll h1 {
-  color: var(--Secondary);
-  font-size: 44px;
-  font-family: "Estedad-FD";
-  font-weight: bold;
-  margin-bottom: 14px;
-}
-
-.headerAll p {
-  color: var(--BodyR20);
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Estedad-FD";
-}
-
-.btn-head {
-  margin-top: 40px;
-}
-
-.btn-head a:nth-child(1) {
-  width: 186px;
-  height: 48px;
-  background-color: var(--Secondary);
-  color: var(--Black);
-  font-size: 16px;
-  font-family: "Estedad-FD";
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.btn-head a:nth-child(2) {
-  width: 151px;
-  height: 48px;
-  background-color: transparent;
-  border: 1px solid var(--White);
-  color: var(--White);
-  font-size: 16px;
-  font-family: "Estedad-FD";
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.mt-200 {
-  margin-top: 196px;
-}
-
-/* --- Navbar Section --- */
-.navBar {
-  width: 84%;
-  height: 96px;
-  background-color: var(--White);
-  padding: 0 32px;
-  border-radius: 0 0 16px 16px;
+/* --------------------- Navbar Section ---------------------- */
+.container-nav {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 96px;
+  padding: 0 108px;
   z-index: 1000;
 }
 
+.navBar {
+  width: 100%;
+  height: 100%;
+  background-color: var(--White);
+  margin: 0 auto;
+  padding: 0 32px;
+  border-radius: 0 0 16px 16px;
+}
+
 .navList li {
-  list-style: none;
+    list-style: none;
 }
 
 .ml-40 {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
 .navList a {
-  text-decoration: none;
-  color: var(--Neutral-Gray-10);
-  font-family: "Estedad-FD";
-  font-weight: 500;
-  font-size: 16px;
+    text-decoration: none;
+    color: var(--Neutral-Gray-10);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navList a:hover {
+  font-weight: bold;
+}
+
+.navList img {
+  cursor: pointer;
 }
 
 .btnLogReg {
-  width: 122px;
-  height: 40px;
-  background-color: var(--primary);
-  color: var(--White);
-  font-family: "Estedad-FD";
-  font-weight: 500;
-  font-size: 16px;
+    width: 122px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .btnLogReg:hover {
-  background-color: var(--primary);
-  color: var(--White);
+    background-color: var(--Primary-Shade-2);
+    color: var(--White);
 }
+
 
 /* - SearchBox Section - */
 .searchBox {
-  width: 750px;
-  height: 333px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: 60%;
+  height: 54vh;
   border-radius: 16px;
   background-color: var(--White);
-  position: absolute;
-  top: 20px;
-  right: 20%;
-  display: none !important;
+  padding-top: 16px;
+  margin: 0 auto;
+  display: none;
   z-index: 10;
 }
 
-.searchBox input {
-  width: 100%;
-  height: 30px;
-  border: none;
-  font-family: "Estedad-FD";
-  font-size: 16px;
-  font-weight: 500;
+.searchBox input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.searchBox input::placeholder {
-  color: var(--Neutral-Gray-3);
-  font-family: "Estedad-FD";
-  font-size: 16px;
-  font-weight: 500;
+.searchBox input::placeholder{
+    color: var(--Neutral-Gray-3);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.searchBox input:focus {
-  outline: none;
+.searchBox input:focus{
+    outline: none;
 }
 
-.searchBox img {
-  width: 20px;
-  height: 20px;
+.searchBox img{
+    width: 20px;
+    height: 20px;
 }
 
 .hisSearch p {
-  color: var(--Neutral-Gray-9);
-  font-family: "Estedad-FD";
-  font-size: 16px;
-  font-weight: 500;
+    color: var(--Neutral-Gray-9);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .listfh {
-  margin-top: 26px;
-}
-
-.mb-50 {
-  margin-bottom: 50px;
+    margin-top: 26px;
 }
 
 .hisSearch a {
-  color: var(--Neutral-Gray-8);
-  font-family: "Estedad-FD";
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid var(--Neutral-Gray-1);
-  border-radius: 32px;
-  text-decoration: none;
-  padding: 10px;
+    color: var(--Neutral-Gray-8);
+    font-family: 'Estedad-FD';
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--Neutral-Gray-1);
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.line {
-  width: 100%;
+.lineSearch {
+  width: 98%;
   height: 1px;
   background-color: var(--Neutral-Gray-2);
-  margin: 15px 12px 15px 0;
+  margin: 24px 12px 24px 0;
 }
 
 .overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 40%);
-  z-index: 5;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    z-index: 5;
 }
 
 /*  */
@@ -526,7 +480,7 @@ input[type="range"]::-moz-range-thumb {
   height: 432px;
   background-color: rgba(30, 30, 30, 90%);
   border-radius: 16px;
-  padding: 41px 52px;
+  padding: 41px 52px !important;
 }
 
 .rowF {
