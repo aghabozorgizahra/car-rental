@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Rent - Car rental Website</title>
+    <link rel="stylesheet" href="./../assets/bootstrap/bootstrap.rtl.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./../assets/css/styleUserPanel/style-wallet.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="container-nav">
+        <div class="row navBar d-flex align-content-center">
+            <div class="col-2">
+                <a href="./../index.html"><img src="./../assets/imgs/icons/Logo.svg" alt="" /></a>
+            </div>
+
+            <div class="col-8 d-flex justify-content-center pt-3" id="navList">
+                <ul class="d-flex navList">
+                    <li class="ml-40"><a href="#">رزرو خودرو</a></li>
+                    <li class="ml-40"><a href="#">خدمات ما</a></li>
+                    <li class="ml-40"><a href="#">بلاگ</a></li>
+                    <li class="ml-40"><a href="about.html">درباره ما</a></li>
+                    <li class="ml-40"><a href="./../contact-us.html">تماس با ما</a></li>
+                    <li>
+                        <a id="searchIcon"><img src="./../assets/imgs/icons/search.svg" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2 d-flex justify-content-end pt-2" id="btnLogReg">
+                <a href="./login.html" class="btn btnLogReg">ورود / ثبت نام</a>
+            </div>
+        </div>
+        <!-- SearchBox Section -->
+        <div class="row row-margin-without searchBox" id="searchBox">
+            <div class="row row-margin-without">
+                <div class="col-12 d-flex align-content-center">
+                    <img src="./../assets/imgs/icons/search.svg" class="mt-1 me-2" alt="" />
+                    <input type="text" name="search" placeholder="جستجو" />
+                </div>
+
+                <div class="lineSearch"></div>
+            </div>
+
+            <div class="row row-margin-without mb-5">
+                <div class="col-11 hisSearch">
+                    <div class="col-12">
+                        <p>
+                            <img src="./../assets/imgs/icons/clock.svg" alt="" class="me-2" />تاریخچه جستجو های شما
+                        </p>
+                    </div>
+                    <div class="col-12 listfh">
+                        <a href="#">بنز S500 یک</a>
+                        <a href="#" class="me-2">DS 3</a>
+                        <a href="#" class="me-2">Rolls Royce Cullinan</a>
+                        <a href="#" class="me-2">پرشیا ELX سفید</a>
+                        <a href="#">Tiggo 8 Pro</a>
+                    </div>
+                </div>
+                <div class="col-1 text-end">
+                    <a href="#"><img src="./../assets/imgs/icons/Vector.svg" alt="" /></a>
+                </div>
+            </div>
+
+            <div class="row hisSearch row-margin-without">
+                <div class="col-12" style="height: 30px">
+                    <p>
+                        <img src="./../assets/imgs/icons/heart-search.svg" alt="" class="me-2" />جستجوهای پرطرفدار
+                    </p>
+                </div>
+                <div class="col-12 listfh">
+                    <a href="#">Ferrari Roma</a>
+                    <a href="#" class="me-2">Peugeot 2008</a>
+                    <a href="#" class="me-2">Audi A8</a>
+                    <a href="#" class="me-2">بنز S500 یک</a>
+                    <a href="#" class="me-2">پرشیا ELX سفید</a>
+                    <a href="#">بنز S500 یک</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Body Section -->
+    <div class="container-fluid body-panel mb-5">
+        <div class="row row-margin-without d-flex justify-content-between wallet-all">
+            <div class="col-3 wallet-right ps-0">
+                <div class="info-wallet-top d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="../assets/imgs/Ellipse-114.png" class="img-prof me-3" alt="">
+                        <div class="text-info">
+                            <h4>اولدوز بهاور</h4>
+                            <span>6789 345 0912</span>
+                        </div>
+                    </div>
+                    <a href=""><img src="../assets/imgs/icons/edit-outline.svg" class="img-edit" alt=""></a>
+                </div>
+                <div class="info-wallet-bottom">
+                    <a href="#" class="d-flex justify-content-between align-items-center borderB-color pb-3">
+                        <div>
+                            <img src="../assets/imgs/icons/empty-wallet.svg" class="me-2" alt="">
+                            <span class="link-active">کیف پول</span>
+                        </div>
+                        <div>
+                            <img src="../assets/imgs/icons/Vector-141.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="d-flex justify-content-between align-items-center borderB-color py-3">
+                        <div>
+                            <img src="../assets/imgs/icons/reserve.svg" class="me-2" alt="">
+                            <span class="link-No-active">رزرو های من</span>
+                        </div>
+                        <div>
+                            <img src="../assets/imgs/icons/Vector-140.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="d-flex justify-content-between align-items-center borderB-color py-3">
+                        <div>
+                            <img src="../assets/imgs/icons/location.svg" class="me-2" alt="">
+                            <span class="link-No-active">آدرس های من</span>
+                        </div>
+                        <div>
+                            <img src="../assets/imgs/icons/Vector-140.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="d-flex justify-content-between align-items-center borderB-color py-3">
+                        <div>
+                            <img src="../assets/imgs/icons/card-pos.svg" class="me-2" alt="">
+                            <span class="link-No-active">پرداخت های من</span>
+                        </div>
+                        <div>
+                            <img src="../assets/imgs/icons/Vector-140.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="d-flex justify-content-between align-items-center borderB-color py-3">
+                        <div>
+                            <img src="../assets/imgs/icons/Group-32.svg" class="me-2" alt="">
+                            <span class="link-No-active">نظرات من</span>
+                        </div>
+                        <div>
+                            <img src="../assets/imgs/icons/Vector-140.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <img src="../assets/imgs/icons/logout.svg" class="me-2" alt="">
+                            <span class="link-logout">خروج</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-9 wallet-left">
+                <div class="d-flex justify-content-between align-items-center top-left-wallet borderB-color pb-4">
+                    <h4>کیف پول</h4>
+                    <a href="#" class="d-flex align-items-center">
+                        <img src="../assets/imgs/icons/empty-wallet-add.svg" class="me-2" alt="">
+                        <span>افزایش اعتبار</span>
+                    </a>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-center marginTop">
+                        <div class="d-flex flex-column justify-content-between cart-bank me-2">
+                            <div class="d-flex justify-content-between">
+                                <img src="../assets/imgs/icons/LogoFooter.svg" class="img-rowBank" alt="">
+                                <img src="../assets/imgs/icons/Group-yellow.svg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-between text-rowBank">
+                                <span>موجودی کیف پول</span>
+                                <span>11,000 تومان</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between cart-site ms-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img src="../assets/imgs/icons/visa.svg" class="img-rowSite" alt="">
+                                <img src="../assets/imgs/icons/Group-yellow.svg" alt="">
+                            </div>
+                            <div class="d-flex flex-column text-rowBank mx-auto">
+                                <span class="mb-1">اولدوز بهاور</span>
+                                <span>2221 - 0057 - 4680 - 2089</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-mony">
+                        <form action="">
+                            <div class="d-flex justify-content-between btn-price mb-2">
+                                <a href="" class="d-flex justify-content-center align-items-center">100,000 <span class="ms-1">تومان</span></a>
+                                <a href="" class="d-flex justify-content-center align-items-center">200,000 <span class="ms-1">تومان</span></a>
+                                <a href="" class="d-flex justify-content-center align-items-center">300,000 <span class="ms-1">تومان</span></a>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center input-mony mb-4">
+                                <input type="text" placeholder="مبلغ مورد نظر خود را وارد کنید...">
+                                <span>تومان</span>
+                            </div>
+                            <button type="button" class="incPrice">افزایش اعتبار</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../assets/js/navBar-search.js"></script>
+    <script src="./../assets/bootstrap/bootstrap.bundle.min.js.js"></script>
+</body>
+
+</html>
