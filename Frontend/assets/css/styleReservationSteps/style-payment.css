@@ -1,0 +1,573 @@
+@font-face {
+    font-family: 'Estedad';
+    src: url('../../font/Estedad[KSHD\,wght].woff2') format(woff2);
+
+}
+
+@font-face {
+    font-family: 'Estedad-FD';
+    src: url('../../font/Estedad-FD[KSHD\,wght].woff2') format(woff2);
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../../font/IRANSansWeb\(FaNum\).woff2') format(woff2);
+}
+
+
+
+:root {
+    --primary:#194BF0;
+    --Secondary:#FDB713;
+    --White:#FFFFFF;
+    --Low-White: #f5f0f0;
+    --Black : #0C0C0C;
+    --BodyR20: #F9F9F9;
+    --Neutral-Gray-1: #F3F3F3;
+    --Neutral-Gray-2: #D7D7D7;
+    --Neutral-Gray-3: #C2C2C2;
+    --Neutral-Gray-4: #AEAEAE;
+    --Neutral-Gray-5: #9A9A9A;
+    --Neutral-Gray-6: #868686;
+    --Neutral-Gray-7: #727272;
+    --Neutral-Gray-8: #5E5E5E;
+    --Neutral-Gray-9: #494949;
+    --Neutral-Gray-10: #353535;
+    --Neutral-Gray-11: #212121;
+    --color-footer-text: #FFFBFB;
+    --Primary-Shade-2: #0d32aa;
+    --color-tint5: #D9E1FD;
+    --color-suceess: #269E22;
+    --color-info: #1371F4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Estedad-FD';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Neutral-Gray-1);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row-margin-without2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* ------------------- Header Section ------------------- */
+.container-fluid {
+    padding: 0 108px;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-image: url('../../imgs/page-screen.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 185px;
+}
+
+.rols h1 {
+    color: var(--Secondary);
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.breadCrumb span {
+    font-size: 14px;
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+}
+
+
+/* --- Navbar Section --- */
+.container-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 96px;
+  padding: 0 108px;
+  z-index: 1000;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
+  background-color: var(--White);
+  margin: 0 auto;
+  padding: 0 32px;
+  border-radius: 0 0 16px 16px;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.navList a {
+    text-decoration: none;
+    color: var(--Neutral-Gray-10);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navList a:hover {
+  font-weight: bold;
+}
+
+.navList img {
+  cursor: pointer;
+}
+
+.btnLogReg {
+    width: 122px;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--White);
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btnLogReg:hover {
+    background-color: var(--Primary-Shade-2);
+    color: var(--White);
+}
+
+
+/* - SearchBox Section - */
+.searchBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: 60%;
+  height: 54vh;
+  border-radius: 16px;
+  background-color: var(--White);
+  padding-top: 16px;
+  margin: 0 auto;
+  display: none;
+  z-index: 10;
+}
+
+.searchBox input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input::placeholder{
+    color: var(--Neutral-Gray-3);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBox input:focus{
+    outline: none;
+}
+
+.searchBox img{
+    width: 20px;
+    height: 20px;
+}
+
+.hisSearch p {
+    color: var(--Neutral-Gray-9);
+    font-family: 'Estedad-FD';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listfh {
+    margin-top: 26px;
+}
+
+.hisSearch a {
+    color: var(--Neutral-Gray-8);
+    font-family: 'Estedad-FD';
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--Neutral-Gray-1);
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lineSearch {
+  width: 98%;
+  height: 1px;
+  background-color: var(--Neutral-Gray-2);
+  margin: 24px 12px 24px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 40%);
+    z-index: 5;
+}
+
+
+
+/* ------------------- Body Questions ------------------- */
+.mt-56 {
+    margin-top: 56px;
+}
+
+.steps-div {
+    width: 100%;
+    height: 19vh;
+    background-color: var(--White);
+    border-radius: 8px;
+    padding: 0 16px;
+}
+
+.step1-res img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.step2-res img{
+    padding: 6px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--Secondary);
+}
+
+.step3-res img{
+    padding: 6px;
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 50%;
+    background-color: var(--Neutral-Gray-1);
+}
+
+.line-resve {
+    width: 15%;
+    height: 2px;
+    background-color: var(--Neutral-Gray-4);
+}
+
+.text-steps {
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-7);
+}
+
+
+/* info resv */
+.info-rezvr {
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 16px;
+    padding: 24px 24px 24px 24px;
+}
+
+.info-rezvr h4{
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--Neutral-Gray-10);
+}
+
+.mt-56 {
+    margin-top: 56px;
+}
+
+.lines {
+    position: relative;
+}
+
+.lineInfo {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Neutral-Gray-2);
+}
+
+.line-orange {
+    position: absolute;
+    top: -1px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--Secondary);
+}
+
+
+.img-tick {
+    border: 1px solid var(--Neutral-Gray-3);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.txt1-inf-rez {
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--Neutral-Gray-10);
+}
+
+.txt2-inf-rez {
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--Neutral-Gray-7);
+}
+
+
+/* price-calculation */
+.price-calculation {
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 16px;
+    padding: 0px 24px 0px 24px;
+}
+
+.right-prcal {
+    border-left: 1px dotted var(--Neutral-Gray-5);
+    padding-left: 40px;
+}
+
+.input-checkBoxs{
+    width: 20px;
+    height: 20px;
+    border-color: var(--Neutral-Gray-3);
+    border-radius: 16px;
+    margin-left: 12px;
+}
+
+.text-checkBoxs {
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-7);
+}
+
+.sectionPay p {
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-5);
+}
+
+.btn-payment {
+    width: 98%;
+    height: 9vh;
+    background-color: var(--color-suceess);
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--White);
+    border: none;
+    border-radius: 4px;
+    padding: 0 14px;
+}
+
+
+/* section conditions */
+.conditions {
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 16px 16px 0 0;
+    padding: 24px 24px 24px 24px;
+}
+
+.conditions h4{
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--Neutral-Gray-10);
+}
+
+.txt-info {
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--color-info);
+    cursor: pointer;
+}
+
+.conditionsPlus {
+    width: 100%;
+    padding: 37px 16px;
+    background-color: var(--Neutral-Gray-2);
+    border-radius: 0 0 16px 16px;
+}
+
+.conditionsPlus span{
+    font-size: 24px;
+    font-family: 'Estedad-FD';
+    font-weight: bold;
+    color: var(--Neutral-Gray-10);
+}
+
+.conditionsPlus button{
+    padding: 8px 56px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 500;
+    color: var(--White);
+}
+
+
+/* ------------------- Footer Section ------------------- */
+.footer-section {
+    padding: 0 108px;
+    margin-top: 80px; /* 280px --> 80px */
+    margin-bottom: 64px;
+}
+
+.footer {
+    width: 100%;
+    height: 432px;
+    background-color: rgba(30, 30, 30, 90%);
+    border-radius: 16px;
+    padding: 41px 52px;
+}
+
+.rowF {
+    border: 1px solid var(--Neutral-Gray-6);
+    border-radius: 16px;
+    padding: 16px 0;
+}
+
+.rowF p{
+    color: var(--Low-White);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.rowF span{
+    color: var(--color-footer-text);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.brand p{
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+    line-height: 180%;
+}
+
+.FUl a {
+    color: var(--White);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 300;
+}
+
+.newsSec {
+    margin-top: 28px;
+}
+
+.newsSec h5{
+    color: var(--White);
+    font-size: 16px;
+    font-family: 'Estedad-FD';
+    margin-bottom: 12px;
+}
+
+.newsSec form{
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.newsSec input{
+    width: 80%;
+    height: 100%;
+    border: 1px solid var(--Neutral-Gray-4);
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    padding-right: 4px;
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec input:focus{
+    outline: none;
+}
+
+.newsSec input::placeholder{
+    font-size: 12px;
+    font-family: 'Estedad-FD';
+    color: var(--Neutral-Gray-3);
+}
+
+.newsSec button{
+    padding: 7px 10px 5px 10px;
+    background-color: var(--Secondary);
+    color: var(--Neutral-Gray-11);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+}
+
+.copyR {
+    border-top: 1px solid var(--Neutral-Gray-6);
+}
+
+.copyR p{
+    color: var(--Neutral-Gray-5);
+    font-size: 14px;
+    font-family: 'Estedad-FD';
+    font-weight: 400;
+}
+
+.mt-3-4 {
+    margin-top: 17px;
+}
+
+.mt-4-5 {
+    margin-top: 33px;
+}
+
+.border-one {
+    border-left: 1px solid var(--Neutral-Gray-6);
+}
